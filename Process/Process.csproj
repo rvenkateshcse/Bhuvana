@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Math\Maths.csproj" />
+    <ProjectReference Include="..\Numbers\Numbers.csproj" />
   </ItemGroup>
 
 </Project>

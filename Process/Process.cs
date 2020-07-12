@@ -1,7 +1,5 @@
 ﻿using Maths;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using Numbers;
 
 namespace Process
 {
@@ -24,10 +22,20 @@ namespace Process
                 case "division":
                     output = Division.div(input1, input2).ToString();
                     break;
+                case "divby3notby6":
+                    output = Divisionbythreenotbysix.Run(input1).ToString();
+                    break;
+                case "armstrongornot":
+                    output = armstrongnumber.check(input1).ToString();
+                    break;
+                case "factorial":
+                    output = Factorial.calculate(input1).ToString();
+                    break;
+
 
 
             }
             return output;
-            }
+        }
     }
 }
