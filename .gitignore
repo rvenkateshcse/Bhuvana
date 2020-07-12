@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/MyPractices
+/Databaseoperations/bin/Debug/netstandard2.0
+/Databaseoperations/obj
+/Math/bin/Debug/netstandard2.0
+/Math/obj
+/MyPractices/bin/Debug
+/MyPractices/obj/Debug
+/Process/bin/Debug/netstandard2.0
+/Process/obj
+/Numbers/obj
