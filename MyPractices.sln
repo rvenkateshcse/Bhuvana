@@ -7,9 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPractices", "MyPractices\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maths", "Math\Maths.csproj", "{3C55D1AC-557D-41B5-AD22-D1B34A6AC167}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Process", "Process\Process.csproj", "{83FE0C84-EB30-4899-88A6-F68849D81395}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Process", "Process\Process.csproj", "{83FE0C84-EB30-4899-88A6-F68849D81395}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Numbers", "Numbers\Numbers.csproj", "{735FA6C2-DA0B-411E-8489-FE70E80FA047}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Numbers", "Numbers\Numbers.csproj", "{735FA6C2-DA0B-411E-8489-FE70E80FA047}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginForm", "LoginForm\LoginForm.csproj", "{6DA67010-9F56-47BE-B3B9-22EDB013F59B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{735FA6C2-DA0B-411E-8489-FE70E80FA047}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{735FA6C2-DA0B-411E-8489-FE70E80FA047}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{735FA6C2-DA0B-411E-8489-FE70E80FA047}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DA67010-9F56-47BE-B3B9-22EDB013F59B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DA67010-9F56-47BE-B3B9-22EDB013F59B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DA67010-9F56-47BE-B3B9-22EDB013F59B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DA67010-9F56-47BE-B3B9-22EDB013F59B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
