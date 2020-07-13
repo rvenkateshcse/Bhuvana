@@ -10,16 +10,12 @@ namespace Numbers
         {
             int num = Convert.ToInt32(input1);
             int result=1;
-            if (num == 1)
-                return 1;
-            else
+            for(int i=1;i<=num;i++)
             {
-                for(int i=num;i>=1;i--)
-                {
-                    result = result * num;
+                    result = result * i;
                     
-                }
             }
+            
             return result;
         }
     }
