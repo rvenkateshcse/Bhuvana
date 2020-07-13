@@ -34,6 +34,9 @@ namespace Process
                 case "palindrome":
                     output = PalindromeNumber.find(input1).ToString();
                     break;
+                case "reverse":
+                    output = ReverseNumber.Reverse(input1).ToString();
+                    break;
 
 
 
