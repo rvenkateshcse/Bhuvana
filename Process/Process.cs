@@ -1,5 +1,6 @@
 ﻿using Maths;
 using Numbers;
+using LoginForms;
 
 namespace Process
 {
@@ -37,9 +38,9 @@ namespace Process
                 case "reverse":
                     output = ReverseNumber.Reverse(input1).ToString();
                     break;
-
-
-
+                case "login":
+                    output = LoginClass.Login(input1, input2).ToString();
+                    break;
             }
             return output;
         }

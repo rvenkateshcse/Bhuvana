@@ -33,7 +33,7 @@ namespace LoginForm.Controllers
 
             {
 
-                ViewBag.Status = "CORRECT UserName and Password";
+                ViewBag.Status = "Login Successfully";
 
             }
 

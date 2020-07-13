@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Numbers", "Numbers\Numbers.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginForm", "LoginForm\LoginForm.csproj", "{6DA67010-9F56-47BE-B3B9-22EDB013F59B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginForms", "LoginForms\LoginForms.csproj", "{D7CFFCDF-8DCD-4BB8-A687-EA6DEE622A84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{6DA67010-9F56-47BE-B3B9-22EDB013F59B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DA67010-9F56-47BE-B3B9-22EDB013F59B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DA67010-9F56-47BE-B3B9-22EDB013F59B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7CFFCDF-8DCD-4BB8-A687-EA6DEE622A84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7CFFCDF-8DCD-4BB8-A687-EA6DEE622A84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7CFFCDF-8DCD-4BB8-A687-EA6DEE622A84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7CFFCDF-8DCD-4BB8-A687-EA6DEE622A84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
