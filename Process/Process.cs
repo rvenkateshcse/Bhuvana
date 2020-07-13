@@ -31,6 +31,9 @@ namespace Process
                 case "factorial":
                     output = Factorial.calculate(input1).ToString();
                     break;
+                case "palindrome":
+                    output = PalindromeNumber.find(input1).ToString();
+                    break;
 
 
 
