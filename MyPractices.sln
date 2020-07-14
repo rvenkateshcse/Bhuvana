@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Process", "Process\Process.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Numbers", "Numbers\Numbers.csproj", "{735FA6C2-DA0B-411E-8489-FE70E80FA047}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginForm", "LoginForm\LoginForm.csproj", "{6DA67010-9F56-47BE-B3B9-22EDB013F59B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginForm", "LoginForm\LoginForm.csproj", "{6DA67010-9F56-47BE-B3B9-22EDB013F59B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginForms", "LoginForms\LoginForms.csproj", "{D7CFFCDF-8DCD-4BB8-A687-EA6DEE622A84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginForms", "LoginForms\LoginForms.csproj", "{D7CFFCDF-8DCD-4BB8-A687-EA6DEE622A84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseOperation", "DatabaseOperation\DatabaseOperation.csproj", "{3085F4A8-1DEB-45BE-AF98-BE757720E554}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{D7CFFCDF-8DCD-4BB8-A687-EA6DEE622A84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7CFFCDF-8DCD-4BB8-A687-EA6DEE622A84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7CFFCDF-8DCD-4BB8-A687-EA6DEE622A84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3085F4A8-1DEB-45BE-AF98-BE757720E554}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3085F4A8-1DEB-45BE-AF98-BE757720E554}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3085F4A8-1DEB-45BE-AF98-BE757720E554}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3085F4A8-1DEB-45BE-AF98-BE757720E554}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

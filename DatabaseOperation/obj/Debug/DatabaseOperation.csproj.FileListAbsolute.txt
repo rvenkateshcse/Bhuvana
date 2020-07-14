@@ -1,0 +1,9 @@
+C:\Users\rvenk\Source\Repos\Bhuvana\DatabaseOperation\bin\Debug\DatabaseOperation.exe.config
+C:\Users\rvenk\Source\Repos\Bhuvana\DatabaseOperation\bin\Debug\DatabaseOperation.exe
+C:\Users\rvenk\Source\Repos\Bhuvana\DatabaseOperation\bin\Debug\DatabaseOperation.pdb
+C:\Users\rvenk\Source\Repos\Bhuvana\DatabaseOperation\obj\Debug\DatabaseOperation.csprojAssemblyReference.cache
+C:\Users\rvenk\Source\Repos\Bhuvana\DatabaseOperation\obj\Debug\DatabaseOperation.Form1.resources
+C:\Users\rvenk\Source\Repos\Bhuvana\DatabaseOperation\obj\Debug\DatabaseOperation.Properties.Resources.resources
+C:\Users\rvenk\Source\Repos\Bhuvana\DatabaseOperation\obj\Debug\DatabaseOperation.csproj.GenerateResource.cache
+C:\Users\rvenk\Source\Repos\Bhuvana\DatabaseOperation\obj\Debug\DatabaseOperation.exe
+C:\Users\rvenk\Source\Repos\Bhuvana\DatabaseOperation\obj\Debug\DatabaseOperation.pdb
