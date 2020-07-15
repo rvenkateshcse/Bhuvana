@@ -1,0 +1,8 @@
+C:\Users\rvenk\Source\Repos\Bhuvana\StringFunctions\bin\Debug\netstandard2.0\StringFunctions.deps.json
+C:\Users\rvenk\Source\Repos\Bhuvana\StringFunctions\bin\Debug\netstandard2.0\StringFunctions.dll
+C:\Users\rvenk\Source\Repos\Bhuvana\StringFunctions\bin\Debug\netstandard2.0\StringFunctions.pdb
+C:\Users\rvenk\Source\Repos\Bhuvana\StringFunctions\obj\Debug\netstandard2.0\StringFunctions.csprojAssemblyReference.cache
+C:\Users\rvenk\Source\Repos\Bhuvana\StringFunctions\obj\Debug\netstandard2.0\StringFunctions.AssemblyInfoInputs.cache
+C:\Users\rvenk\Source\Repos\Bhuvana\StringFunctions\obj\Debug\netstandard2.0\StringFunctions.AssemblyInfo.cs
+C:\Users\rvenk\Source\Repos\Bhuvana\StringFunctions\obj\Debug\netstandard2.0\StringFunctions.dll
+C:\Users\rvenk\Source\Repos\Bhuvana\StringFunctions\obj\Debug\netstandard2.0\StringFunctions.pdb

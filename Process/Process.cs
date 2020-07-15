@@ -1,6 +1,7 @@
 ﻿using Maths;
 using Numbers;
 using LoginForms;
+using StringFunctions;
 
 namespace Process
 {
@@ -50,6 +51,10 @@ namespace Process
                 case "numberincharacter":
                     output = NumbersInCharacters.print(input1).ToString();
                     break;
+                case "strreverse":
+                    output = StringReverse.Reverse(input1).ToString();
+                    break;
+
 
 
             }

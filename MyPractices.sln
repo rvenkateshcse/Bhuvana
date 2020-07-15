@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginForms", "LoginForms\Lo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseOperation", "DatabaseOperation\DatabaseOperation.csproj", "{3085F4A8-1DEB-45BE-AF98-BE757720E554}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringFunctions", "StringFunctions\StringFunctions.csproj", "{F6E7CCD1-43AA-414D-91AD-2891F1D236F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{3085F4A8-1DEB-45BE-AF98-BE757720E554}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3085F4A8-1DEB-45BE-AF98-BE757720E554}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3085F4A8-1DEB-45BE-AF98-BE757720E554}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6E7CCD1-43AA-414D-91AD-2891F1D236F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6E7CCD1-43AA-414D-91AD-2891F1D236F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6E7CCD1-43AA-414D-91AD-2891F1D236F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6E7CCD1-43AA-414D-91AD-2891F1D236F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
