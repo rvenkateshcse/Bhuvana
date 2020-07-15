@@ -10,7 +10,7 @@ namespace Numbers
         {
 
             int num = Convert.ToInt32(input1);
-            int res = 0, temp = num;
+            int res = 0;
             while (num != 0)
             {
                 res = res * 10;

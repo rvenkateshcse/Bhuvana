@@ -10,13 +10,12 @@ namespace Numbers
         {
             int n = Convert.ToInt32(input1);
             string output="";
-            while(n>1)
+            while(n>0)
             {
             int  rem=  n % 2;
                 output = Convert.ToString(rem) + output;
                 n = n / 2;
             }
-            output = Convert.ToString(n) + output;
             return output;
         }
     }

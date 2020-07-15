@@ -47,6 +47,10 @@ namespace Process
                 case "decimaltobinary":
                     output = DecimaltoBinary.convert(input1).ToString();
                     break;
+                case "numberincharacter":
+                    output = NumbersInCharacters.print(input1).ToString();
+                    break;
+
 
             }
             return output;
