@@ -44,6 +44,9 @@ namespace Process
                 case "sumofdigits":
                     output = Sumofdigits.find(input1).ToString();
                     break;
+                case "decimaltobinary":
+                    output = DecimaltoBinary.convert(input1).ToString();
+                    break;
 
             }
             return output;
