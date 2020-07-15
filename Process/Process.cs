@@ -41,6 +41,10 @@ namespace Process
                 case "login":
                     output = LoginClass.Login(input1, input2).ToString();
                     break;
+                case "sumofdigits":
+                    output = Sumofdigits.find(input1).ToString();
+                    break;
+
             }
             return output;
         }
