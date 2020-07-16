@@ -63,6 +63,12 @@ namespace Process
                 case "strpalindrome":
                     output = StringPalindrome.find(input1).ToString();
                     break;
+                case "length":
+                    output = StringLength.calculate(input1).ToString();
+                    break;
+                case "vowels":
+                    output = NumofVowels.print(input1).ToString();
+                    break;
 
 
 
