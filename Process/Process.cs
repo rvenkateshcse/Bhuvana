@@ -54,6 +54,12 @@ namespace Process
                 case "strreverse":
                     output = StringReverse.Reverse(input1).ToString();
                     break;
+                case "duplicate":
+                    output = DuplicateElement.find(input1).ToString();
+                    break;
+                case "unique":
+                    output = UniqueElement.Return(input1).ToString();
+                    break;
 
 
 
