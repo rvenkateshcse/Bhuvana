@@ -60,6 +60,9 @@ namespace Process
                 case "unique":
                     output = UniqueElement.Return(input1).ToString();
                     break;
+                case "strpalindrome":
+                    output = StringPalindrome.find(input1).ToString();
+                    break;
 
 
 

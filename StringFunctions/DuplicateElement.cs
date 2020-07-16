@@ -6,7 +6,7 @@ namespace StringFunctions
 {
     public static class DuplicateElement
     {
-        public static string find(object input1)
+        public static string find (object input1)
         {
             string str = Convert.ToString(input1);
             int count ;
