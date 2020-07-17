@@ -72,6 +72,9 @@ namespace Process
                 case "search":
                     output = CharacterSearching.search(input1, input2).ToString();
                     break;
+                case "count":
+                    output = WordCount.count(input1).ToString();
+                    break;
 
 
 
