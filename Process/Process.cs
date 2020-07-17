@@ -69,6 +69,9 @@ namespace Process
                 case "vowels":
                     output = NumofVowels.print(input1).ToString();
                     break;
+                case "search":
+                    output = CharacterSearching.search(input1, input2).ToString();
+                    break;
 
 
 
