@@ -75,6 +75,9 @@ namespace Process
                 case "count":
                     output = WordCount.count(input1).ToString();
                     break;
+                case "replace":
+                    output = CharacterReplace.Replace(input1, input2).ToString();
+                    break;
 
 
 
