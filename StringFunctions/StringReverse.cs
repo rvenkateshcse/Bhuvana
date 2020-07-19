@@ -6,6 +6,11 @@ namespace StringFunctions
 {
   public static  class StringReverse
     {
+        /// <summary>
+        /// Returns Reverse Of Input String
+        /// </summary>
+        /// <param name="input1"></param>
+        /// <returns></returns>
         public  static string Reverse(object input1)
         {
             string str = Convert.ToString(input1);

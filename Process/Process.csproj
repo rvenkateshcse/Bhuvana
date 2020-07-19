@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LoginForms\LoginForms.csproj" />
     <ProjectReference Include="..\Math\Maths.csproj" />
     <ProjectReference Include="..\Numbers\Numbers.csproj" />
     <ProjectReference Include="..\StringFunctions\StringFunctions.csproj" />

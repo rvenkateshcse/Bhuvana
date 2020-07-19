@@ -6,7 +6,12 @@ namespace StringFunctions
 {
   public static  class NumofVowels
     {
-        public static int print(object input1)
+        /// <summary>
+        /// Print Number Of Vowels Present in Input String
+        /// </summary>
+        /// <param name="input1"></param>
+        /// <returns></returns>
+        public static int Print(object input1)
         {
             string str = Convert.ToString(input1);
             int count = 0;

@@ -4,9 +4,14 @@ using System.Text;
 
 namespace Numbers
 {
-  public static  class armstrongnumber
+  public static  class Armstrongnumber
     {
-        public static string check(object input1)
+        /// <summary>
+        /// Print  the Input Integer is Armstrong Number Or Not
+        /// </summary>
+        /// <param name="input1"></param>
+        /// <returns></returns>
+        public static string Check(object input1)
         {
             string output = string.Empty;
             int num = Convert.ToInt32(input1);

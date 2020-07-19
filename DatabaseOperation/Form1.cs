@@ -13,13 +13,18 @@ namespace DatabaseOperation
 {
     public partial class Form1 : Form
     {
+        
         public Form1()
         {
             InitializeComponent();
         }
         SqlConnection con = new SqlConnection(@"data source=DESKTOP-HQNFTEO;initial catalog=master;integrated security=true;");
         
-
+        /// <summary>
+        /// Insert Input Data  Into Database
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
             con.Open();
@@ -28,7 +33,11 @@ namespace DatabaseOperation
             MessageBox.Show("Data Inserted");
             con.Close();
         }
-
+        /// <summary>
+        /// Update Input Data Into Database
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button2_Click(object sender, EventArgs e)
         {
             con.Open();
@@ -39,7 +48,11 @@ namespace DatabaseOperation
             con.Close();
 
         }
-
+        /// <summary>
+        /// Delete Data From Database
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button3_Click(object sender, EventArgs e)
         {
             con.Open();

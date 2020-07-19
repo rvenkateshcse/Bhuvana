@@ -6,7 +6,12 @@ namespace Numbers
 {
   public static  class NumbersInCharacters
     {
-        public static string print(object input1)
+        /// <summary>
+        /// Print the Input Integer In Characters
+        /// </summary>
+        /// <param name="input1"></param>
+        /// <returns></returns>
+        public static string Print(object input1)
         {
             int num = Convert.ToInt32(input1);
             int res = 0,rem ;

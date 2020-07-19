@@ -4,8 +4,14 @@ using System.Text;
 
 namespace Numbers
 {
+    
     public static class ReverseNumber
     {
+        /// <summary>
+        /// Print the Reverse Number Of Input
+        /// </summary>
+        /// <param name="input1"></param>
+        /// <returns></returns>
         public static int Reverse(object input1)
         {
 

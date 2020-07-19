@@ -6,6 +6,11 @@ namespace Numbers
 {
     public static class Divisionbythreenotbysix
     {
+     /// <summary>
+     /// Check the Input Integer Is Divide by Three But Not By Six 
+     /// </summary>
+     /// <param name="input1"></param>
+     /// <returns></returns>
         public static string Run(object input1)
         {
             string output = string.Empty;

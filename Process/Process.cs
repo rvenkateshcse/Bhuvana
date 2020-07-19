@@ -16,25 +16,25 @@ namespace Process
                     output = Addition.Add(input1,input2).ToString();
                     break;
                 case "subtraction":
-                    output = Subtraction.sub(input1, input2).ToString();
+                    output = Subtraction.Sub(input1, input2).ToString();
                     break;
                 case "multiplication":
-                    output = Multiplication.mul(input1, input2).ToString();
+                    output = Multiplication.Mul(input1, input2).ToString();
                     break;
                 case "division":
-                    output = Division.div(input1, input2).ToString();
+                    output = Division.Div(input1, input2).ToString();
                     break;
                 case "divby3notby6":
                     output = Divisionbythreenotbysix.Run(input1).ToString();
                     break;
                 case "armstrongornot":
-                    output = armstrongnumber.check(input1).ToString();
+                    output = Armstrongnumber.Check(input1).ToString();
                     break;
                 case "factorial":
-                    output = Factorial.calculate(input1).ToString();
+                    output = Factorial.Calculate(input1).ToString();
                     break;
                 case "palindrome":
-                    output = PalindromeNumber.find(input1).ToString();
+                    output = PalindromeNumber.Find(input1).ToString();
                     break;
                 case "reverse":
                     output = ReverseNumber.Reverse(input1).ToString();
@@ -43,41 +43,39 @@ namespace Process
                     output = LoginClass.Login(input1, input2).ToString();
                     break;
                 case "sumofdigits":
-                    output = Sumofdigits.find(input1).ToString();
+                    output = Sumofdigits.Find(input1).ToString();
                     break;
                 case "decimaltobinary":
-                    output = DecimaltoBinary.convert(input1).ToString();
+                    output = DecimaltoBinary.Converts(input1).ToString();
                     break;
                 case "numberincharacter":
-                    output = NumbersInCharacters.print(input1).ToString();
+                    output = NumbersInCharacters.Print(input1).ToString();
                     break;
                 case "strreverse":
                     output = StringReverse.Reverse(input1).ToString();
                     break;
                 case "duplicate":
-                    output = DuplicateElement.find(input1).ToString();
+                    output = DuplicateElement.Find(input1).ToString();
                     break;
                 case "unique":
                     output = UniqueElement.Return(input1).ToString();
                     break;
                 case "strpalindrome":
-                    output = StringPalindrome.find(input1).ToString();
+                    output = StringPalindrome.Find(input1).ToString();
                     break;
                 case "length":
-                    output = StringLength.calculate(input1).ToString();
+                    output = StringLength.Calculate(input1).ToString();
                     break;
                 case "vowels":
-                    output = NumofVowels.print(input1).ToString();
+                    output = NumofVowels.Print(input1).ToString();
                     break;
                 case "search":
-                    output = CharacterSearching.search(input1, input2).ToString();
+                    output = CharacterSearching.Search(input1, input2).ToString();
                     break;
                 case "count":
-                    output = WordCount.count(input1).ToString();
+                    output = WordCount.Count(input1).ToString();
                     break;
-                case "replace":
-                    output = CharacterReplace.Replace(input1, input2).ToString();
-                    break;
+                
 
 
 

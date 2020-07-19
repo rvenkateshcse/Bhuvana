@@ -6,7 +6,12 @@ namespace StringFunctions
 {
  public static   class StringLength
     {
-        public static int calculate(object input1)
+        /// <summary>
+        /// Returns Length Of Input String Without Using String Function
+        /// </summary>
+        /// <param name="input1"></param>
+        /// <returns></returns>
+        public static int Calculate(object input1)
         {
             string str = Convert.ToString(input1);
             int count = 0;

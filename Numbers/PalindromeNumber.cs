@@ -6,7 +6,12 @@ namespace Numbers
 {
   public  static class PalindromeNumber
     {
-        public static String find(object input1)
+        /// <summary>
+        /// Check the Input Integer Is Palindrome Or Not
+        /// </summary>
+        /// <param name="input1"></param>
+        /// <returns></returns>
+        public static String Find(object input1)
         {
             string output = string.Empty;
             int num = Convert.ToInt32(input1);

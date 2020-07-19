@@ -6,7 +6,12 @@ namespace Numbers
 {
    public static class DecimaltoBinary
     {
-        public static  string convert(object input1)
+        /// <summary>
+        /// Converts Decimal Number To Binary Number
+        /// </summary>
+        /// <param name="input1"></param>
+        /// <returns></returns>
+        public static  string Converts(object input1)
         {
             int n = Convert.ToInt32(input1);
             string output="";

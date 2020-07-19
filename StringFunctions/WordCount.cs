@@ -6,7 +6,12 @@ namespace StringFunctions
 {
  public static   class WordCount
     {
-        public static int count(object input1)
+        /// <summary>
+        /// Returns a Number of Words  in Input Sentence
+       /// </summary>
+        /// <param name="input1"></param>
+        /// <returns></returns>
+        public static int Count(object input1)
         {
             string str = Convert.ToString(input1);
             int word = 1;

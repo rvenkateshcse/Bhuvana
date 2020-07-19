@@ -4,8 +4,14 @@ using System.Text;
 
 namespace StringFunctions
 {
+    
     public static class UniqueElement
     {
+        /// <summary>
+        /// Check All Characters Of Input String Is Unique
+        /// </summary>
+        /// <param name="input1"></param>
+        /// <returns></returns>
         public static string Return(object input1)
         {
             string str = Convert.ToString(input1);

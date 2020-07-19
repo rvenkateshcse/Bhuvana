@@ -6,7 +6,12 @@ namespace Numbers
 {
   public static  class Sumofdigits
     {
-        public static int find(object input1)
+        /// <summary>
+        /// Calculate the Sum Of Digits  For Input Integer
+        /// </summary>
+        /// <param name="input1"></param>
+        /// <returns></returns>
+        public static int Find(object input1)
         {
             int num = Convert.ToInt32(input1);
             int output=0,rem;

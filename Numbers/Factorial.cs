@@ -6,7 +6,12 @@ namespace Numbers
 {
   public static  class Factorial
     {
-        public static int calculate(object input1)
+        /// <summary>
+        /// Calculate the Factorial Of Input Integer
+        /// </summary>
+        /// <param name="input1"></param>
+        /// <returns></returns>
+        public static int Calculate(object input1)
         {
             int num = Convert.ToInt32(input1);
             int result=1;
