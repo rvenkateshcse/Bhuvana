@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 
 
+
 namespace UserLogin
 {
     public partial class UserLoginForm : System.Web.UI.Page
@@ -16,7 +17,7 @@ namespace UserLogin
 
         }
         SqlConnection con = new SqlConnection(@"data source=DESKTOP-HQNFTEO;initial catalog=master;integrated security=true");
-        
+       
         protected void Button1_Click(object sender, EventArgs e)
         {
             string username = TextBox1.Text;
@@ -25,10 +26,10 @@ namespace UserLogin
             string qry = "select * from Userlogin where username='" + username + "' and userpassword='" + userpassword + "' ";
             SqlCommand cmd = new SqlCommand(qry, con);
             SqlDataReader sdr = cmd.ExecuteReader();
-            if(sdr.Read())
+            if (sdr.Read())
             {
                 Label1.Text = "Login Sucess...";
-               
+                
             }
             else
             {

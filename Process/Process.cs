@@ -1,12 +1,12 @@
 ﻿using Maths;
 using Numbers;
-using LoginForms;
 using StringFunctions;
 
 namespace Process
 {
     public class ProcessInput
     {
+        
         public string Process(string input1,string input2,string input3)
         {
             string output = string.Empty;
@@ -38,9 +38,6 @@ namespace Process
                     break;
                 case "reverse":
                     output = ReverseNumber.Reverse(input1).ToString();
-                    break;
-                case "login":
-                    output = LoginClass.Login(input1, input2).ToString();
                     break;
                 case "sumofdigits":
                     output = Sumofdigits.Find(input1).ToString();
@@ -75,7 +72,10 @@ namespace Process
                 case "count":
                     output = WordCount.Count(input1).ToString();
                     break;
-                
+                case "date":
+                    output = DateandTime.Calculate(input1).ToString();
+                    break;
+
 
 
 
