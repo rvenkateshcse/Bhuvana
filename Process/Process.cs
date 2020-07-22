@@ -4,10 +4,10 @@ using StringFunctions;
 
 namespace Process
 {
-    public class ProcessInput
+    public static class ProcessInput
     {
         
-        public string Process(string input1,string input2,string input3)
+        public static string Process(string input1,string input2,string input3)
         {
             string output = string.Empty;
             switch(input3)

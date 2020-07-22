@@ -29,6 +29,7 @@ namespace UserLogin
             if (sdr.Read())
             {
                 Label1.Text = "Login Sucess...";
+                Response.Redirect("Process.aspx");
                 
             }
             else
