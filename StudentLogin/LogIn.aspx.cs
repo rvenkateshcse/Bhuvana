@@ -15,11 +15,21 @@ namespace StudentLogin
 
         }
         SqlConnection con = new SqlConnection(@"data source=DESKTOP-HQNFTEO;initial catalog=master;integrated security=true");
+        
         protected void Button1_Click(object sender, EventArgs e)
         {
             con.Open();
-            string qry = "select * from StudentLogin ";
+           
+            string qry = "select * from StudentLogin where Name=Name ";
             SqlCommand cmd = new SqlCommand(qry, con);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            if(sdr.Read())
+            {
+                TextBox1.Text = sdr.GetValue(0).ToString();
+                TextBox2.Text = sdr.GetValue(1).ToString();
+                TextBox3.Text = sdr.GetValue(2).ToString();
+
+            }
             con.Close();
 
         }
