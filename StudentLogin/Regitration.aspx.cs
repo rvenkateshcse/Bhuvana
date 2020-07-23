@@ -20,7 +20,8 @@ namespace StudentLogin
             con.Open();
             SqlCommand cmd = new SqlCommand("insert into StudentLogin values('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "')", con);
             cmd.ExecuteNonQuery();
-            Label5.Text = "Data Registered sucessfully";
+           Label5.Text = "Data Registered sucessfully";
+           
             con.Close();
         }
 

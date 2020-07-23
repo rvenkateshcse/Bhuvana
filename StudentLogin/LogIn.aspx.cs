@@ -19,8 +19,8 @@ namespace StudentLogin
         protected void Button1_Click(object sender, EventArgs e)
         {
             con.Open();
-           
-            string qry = "select * from StudentLogin where Name=Name ";
+            string Name = Request.QueryString["Name"];
+            string qry = $"select * from StudentLogin where Name= '{Name}'";
             SqlCommand cmd = new SqlCommand(qry, con);
             SqlDataReader sdr = cmd.ExecuteReader();
             if(sdr.Read())

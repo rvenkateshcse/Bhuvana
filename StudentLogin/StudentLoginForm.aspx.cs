@@ -26,9 +26,9 @@ namespace StudentLogin
             SqlDataReader sdr = cmd.ExecuteReader();
             if (sdr.Read())
             {
-                    Response.Redirect("LogIn.aspx");
-               
-            }
+                Response.Redirect("LogIn.aspx?Name="+Name);
+             }
+            
             else
             {
                 Label3.Text = "UserName and PassWord is Incorrect";
