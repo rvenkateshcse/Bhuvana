@@ -31,6 +31,8 @@ namespace StringFunctions
                 }
                 if (count > 1)
                     output += str[i];
+                else 
+                    output="No Duplicate Element"
             }
             return output;
 
