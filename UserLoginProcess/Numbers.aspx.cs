@@ -141,6 +141,23 @@ namespace UserLoginProcess
                 }
                TextBox4.Text=  output;
             }
+            else if (str == "PrimeNumber")
+            {
+                int k = 0;
+                for(int i=1;i<=Input1;i++)
+                {
+
+                    if (Input1 % i == 0)
+                    {
+                        k++;
+                    }
+                }
+                if (k == 2)
+                    TextBox4.Text = "PrimeNumber";
+                else
+                    TextBox4.Text = "Not a PrimeNumber";
+
+            }
             else
             {
                 Label6.Text = "Enter Correct Operation";

@@ -179,6 +179,21 @@ namespace UserLoginProcess
                 }
                 TextBox4.Text = Convert.ToString(word);
             }
+            else if (str == "StringConcat")
+            {
+                int len1 = Input1.Length;
+                int len2 = Input2.Length;
+              string   res = " ";
+                for(int i=0;i<len1;i++)
+                {
+                    res+= Input1[i];
+                }
+                for (int j = 0; j < len1; j++)
+                {
+                    res+= Input2[j];
+                }
+                TextBox4.Text = res;
+            }
             else
                 Label5.Text = "Enter correct Option";
         }
