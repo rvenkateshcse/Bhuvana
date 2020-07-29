@@ -38,5 +38,10 @@ namespace UserLoginProcess
         {
             Response.Redirect("LogIn.aspx");
         }
+
+        protected void Button6_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ArrayFunctions.aspx");
+        }
     }
 }
