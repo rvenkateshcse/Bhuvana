@@ -32,6 +32,7 @@ namespace UserLoginProcess
         {
             int[] Input1 = new int[ListBox1.Items.Count];
             int[] Input2 = new int[ListBox2.Items.Count];
+
             for (int i = 0; i < ListBox1.Items.Count; i++)
             {
                 Input1[i] = Convert.ToInt32(ListBox1.Items[i].ToString());
@@ -51,30 +52,30 @@ namespace UserLoginProcess
                 }
                 ListBox3.Items.Add(Input1[0].ToString());
             }
-         else   if (TextBox1.Text == "SecondLargest")
+            else if (TextBox1.Text == "SecondLargest")
             {
-                int large = 0,seclarge=0;
+                int large = 0, seclarge = 0;
                 for (int i = 0; i < Input1.Length; i++)
                 {
-                    if(Input1[i]>large)
+                    if (Input1[i] > large)
                     {
                         seclarge = large;
                         large = Input1[i];
-                        
+
                     }
-                    else if(Input1[i]>seclarge&&Input1[i]<large)
+                    else if (Input1[i] > seclarge && Input1[i] < large)
                     {
                         seclarge = Input1[i];
                     }
                 }
                 ListBox3.Items.Add(seclarge.ToString());
             }
-         else  if (TextBox1.Text == "ElementSearch")
+            else if (TextBox1.Text == "ElementSearch")
             {
                 int flag = 0;
-                for(int i=0;i<Input1.Length;i++)
+                for (int i = 0; i < Input1.Length; i++)
                 {
-                    if(Input1[i]==Input2[0])
+                    if (Input1[i] == Input2[0])
                     {
                         flag++;
                     }
@@ -84,9 +85,53 @@ namespace UserLoginProcess
                 else
                     Label5.Text = "Element Not  Present In Array";
             }
+            else if (TextBox1.Text == "AscendingOrder")
+            {
+
+                int temp;
+                for (int i = 0; i < Input1.Length - 1; i++)
+                {
+                    for (int j = i + 1; j < Input1.Length; j++)
+                    {
+                        if (Input1[i] > Input1[j])
+                        {
+                            temp = Input1[i];
+                            Input1[i] = Input1[j];
+                            Input1[j] = temp;
+
+                        }
+                    }
+                }
+                foreach (int value in Input1)
+                {
+                    ListBox3.Items.Add(value.ToString());
+                }
+            }
+            else if (TextBox1.Text == "DescendingOrder")
+            {
+
+                int temp;
+                for (int i = 0; i < Input1.Length - 1; i++)
+                {
+                    for (int j = i + 1; j < Input1.Length; j++)
+                    {
+                        if (Input1[i] < Input1[j])
+                        {
+                            temp = Input1[i];
+                            Input1[i] = Input1[j];
+                            Input1[j] = temp;
+
+                        }
+                    }
+                }
+                foreach (int value in Input1)
+                {
+                    ListBox3.Items.Add(value.ToString());
+                }
+            }
         }
 
-        
+
     }
 
 }

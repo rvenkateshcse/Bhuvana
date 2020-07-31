@@ -34,6 +34,7 @@
             <asp:Button ID="Button4" runat="server" OnClick="Button4_Click" Text="Add" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:ListBox ID="ListBox2" runat="server"></asp:ListBox>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;
             <asp:Button ID="Button5" runat="server" OnClick="Button5_Click" Text="Delete" />
         </p>
