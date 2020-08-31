@@ -19,3 +19,8 @@
 /StudentLogin/obj/Debug
 /UserLoginProcess/bin
 /UserLoginProcess/obj/Debug
+/DataService/obj
+/Repository/obj
+/Student Attendance Management System/bin
+/Student Attendance Management System/obj/Debug
+/packages/EntityFramework.6.2.0

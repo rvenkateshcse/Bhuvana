@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rvenk\\Source\\Repos\\Bhuvana\\StringFunctions\\StringFunctions.csproj": {}
+    "C:\\Users\\rvenk\\source\\repos\\Bhuvana\\StringFunctions\\StringFunctions.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rvenk\\Source\\Repos\\Bhuvana\\StringFunctions\\StringFunctions.csproj": {
+    "C:\\Users\\rvenk\\source\\repos\\Bhuvana\\StringFunctions\\StringFunctions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rvenk\\Source\\Repos\\Bhuvana\\StringFunctions\\StringFunctions.csproj",
+        "projectUniqueName": "C:\\Users\\rvenk\\source\\repos\\Bhuvana\\StringFunctions\\StringFunctions.csproj",
         "projectName": "StringFunctions",
-        "projectPath": "C:\\Users\\rvenk\\Source\\Repos\\Bhuvana\\StringFunctions\\StringFunctions.csproj",
+        "projectPath": "C:\\Users\\rvenk\\source\\repos\\Bhuvana\\StringFunctions\\StringFunctions.csproj",
         "packagesPath": "C:\\Users\\rvenk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rvenk\\Source\\Repos\\Bhuvana\\StringFunctions\\obj\\",
+        "outputPath": "C:\\Users\\rvenk\\source\\repos\\Bhuvana\\StringFunctions\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rvenk\\AppData\\Roaming\\NuGet\\NuGet.Config",
