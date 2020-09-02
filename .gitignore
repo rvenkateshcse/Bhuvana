@@ -24,3 +24,11 @@
 /Student Attendance Management System/bin
 /Student Attendance Management System/obj/Debug
 /packages/EntityFramework.6.2.0
+/StudentAttendenceManagementProject/packages
+/StudentAttendenceManagementProject/Repository/obj
+/StudentAttendenceManagementProject/Repository/bin/Debug/netstandard2.0
+/StudentAttendenceManagementProject/Services/bin/Debug/netstandard2.0
+/StudentAttendenceManagementProject/Services/obj
+/StudentAttendenceManagementProject/StudentAttendenceManagementProject/bin
+/StudentAttendenceManagementProject/StudentAttendenceManagementProject/obj/Debug
+/StudentAttendenceManagementProject/.vs/StudentAttendenceManagementProject
