@@ -28,6 +28,11 @@ namespace StudentAttendenceManagementProject
                url: "{controller}/{action}/{id}",
                defaults: new { controller = "StaffPage", action = "Staff", id = UrlParameter.Optional }
            );
+            routes.MapRoute(
+            name: "Student",
+            url: "{controller}/{action}/{id}",
+            defaults: new { controller = "StudentPage", action = "Student", id = UrlParameter.Optional }
+        );
         }
     }
 }

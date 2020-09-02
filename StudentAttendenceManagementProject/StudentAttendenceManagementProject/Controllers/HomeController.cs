@@ -26,6 +26,7 @@ namespace StudentAttendenceManagementProject.Controllers
             {
                 ViewBag.Result = "Enter Correct UserName and Password";
             }
+            
             return View();
         }
 

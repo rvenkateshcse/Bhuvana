@@ -11,14 +11,10 @@ namespace StudentAttendenceManagementProject.Controllers
         // GET: StudentPage
         public ActionResult Student(Models.StudentModel student)
         {
-            int Re = Services.LogInservice.Student(student.StudentName);
-            if (Re == 1)
+            string Re = Services.LogInservice.Student(student.StudentName);
+            if (Re != " ")
             {
-                ViewBag.Message = "Data Updated";
-            }
-            else if (Re == 0)
-            {
-                ViewBag.Message = "Enter Student Attendence";
+                
             }
             return View();
         }

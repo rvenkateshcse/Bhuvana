@@ -23,9 +23,9 @@ namespace Services
             int Re =Repository.LoginRepo.Staff(Sn, Ad);
             return Re;
         }
-        public static int Student(string Sn)
+        public static string Student(string Sn)
         {
-            int Re = Repository.LoginRepo.Staff(Sn);
+            string Re = Repository.LoginRepo.Student(Sn);
             return Re;
         }
     }
