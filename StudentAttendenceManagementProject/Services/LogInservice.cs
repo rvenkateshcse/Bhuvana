@@ -8,24 +8,24 @@ namespace Services
 {
     public class LogInservice
     {
-        public static int Login(string Un, string pd, string Role)
+        public static int Login(string Un, string pd)
         {
-            int re =Repository.LoginRepo.Login(Un,pd,Role);
+            int re =Repository.LoginRepo.Login(Un,pd);
             return re;
         }
         public static int Register(string Sn,string Un,string Pd)
         {
-            int Re =Repository.LoginRepo.Register(Sn, Un, Pd);
+            int Re =LoginRepo.Register(Sn, Un, Pd);
             return Re;
         }
         public static int Staff(string Sn, int Ad)
         {
-            int Re =Repository.LoginRepo.Staff(Sn, Ad);
+            int Re =LoginRepo.Staff(Sn, Ad);
             return Re;
         }
         public static string Student(string Sn)
         {
-            string Re = Repository.LoginRepo.Student(Sn);
+            string Re = LoginRepo.Student(Sn);
             return Re;
         }
     }

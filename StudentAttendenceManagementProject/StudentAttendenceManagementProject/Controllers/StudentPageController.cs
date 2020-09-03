@@ -14,7 +14,7 @@ namespace StudentAttendenceManagementProject.Controllers
             string Re = Services.LogInservice.Student(student.StudentName);
             if (Re != " ")
             {
-                
+                ViewBag.Result = "Your Data";
             }
             return View();
         }

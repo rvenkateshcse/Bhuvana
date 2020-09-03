@@ -5,19 +5,17 @@
 
 }
 
-<h2>LoginView</h2>
-<b>UserName:</b>&nbsp;&nbsp;&nbsp;&nbsp;@Html.TextBox("UserName")
+<h2>LoginForm</h2>
+<b>UserName:</b>&nbsp;&nbsp;&nbsp;&nbsp;@Html.TextBoxFor(student=>student.UserName)
+<br />
+<br />
+<b>Password:</b>&nbsp;&nbsp;&nbsp;&nbsp;@Html.TextBoxFor(student=>student.Password)
 <br />
 <br />
 <br />
-<b>Password:</b>&nbsp;&nbsp;&nbsp;&nbsp;@Html.TextBox("Passord")
+<b>Role:</b> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @Html.TextBoxFor(student=>student.Role)
 <br />
 <br />
 <br />
-<b>Role:</b> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @Html.TextBox("Role")
-<br />
-<br />
-<br />
-
-<button type="submit" > Login </button>
+<input type="button" name="Btn1" value="Login"  />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Html.ActionLink("Register", "Register", "Registration",null,null);

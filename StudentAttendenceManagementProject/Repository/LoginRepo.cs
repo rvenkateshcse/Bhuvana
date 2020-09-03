@@ -6,7 +6,7 @@ namespace Repository
 {
     public static class LoginRepo
     {
-        public static int Login(string Un, string pd, string role)
+        public static int Login(string Un, string pd)
         {
             int Res;
             SqlConnection con = new SqlConnection(@"data source=DESKTOP-HQNFTEO;initial catalog=master;integrated security=true");
@@ -42,7 +42,7 @@ namespace Repository
             int Res;
             SqlConnection con = new SqlConnection(@"data source=DESKTOP-HQNFTEO;initial catalog=master;integrated security=true");
             con.Open();
-            SqlCommand cmd = new SqlCommand("update  StudentAttendanceTable(AttendedDays) set AttendedDays='"+Ad+"' where StudentName='"+Sn+"' ", con);
+            SqlCommand cmd = new SqlCommand("update  StudentAttendanceTable('AttendedDays') set AttendedDays='"+Ad+"' where StudentName='"+Sn+"' ", con);
             Res = cmd.ExecuteNonQuery() == 1?1:0;
             con.Close();
 

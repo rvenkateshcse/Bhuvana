@@ -10,22 +10,25 @@ namespace StudentAttendenceManagementProject.Controllers
     {
         public ActionResult Index(Models.StudentModel student)
         {
-            int re = Services.LogInservice.Login(student.UserName, student.Password, student.Role);
-            if(re==1)
-            {
-                if (student.Role == "Staff")
+            string UserName = student.UserName;
+            string Password = student.Password;
+            string Role = Request.Params["Btn1"];
+                int re = Services.LogInservice.Login(UserName, Password);
+                if (re == 1)
                 {
-                    Response.Redirect("StaffPage/Staff");
+                    if (Role== "Staff")
+                    {
+                      return RedirectToAction("Staff");
+                    }
+                    else if (Role == "Student")
+                    {
+                       return RedirectToAction("Student");
+                    }
                 }
-             else   if (student.Role == "Student")
+                else if (re == 0)
                 {
-                    Response.Redirect("StudentPage/Student");
+                    ViewBag.Result = "Enter Correct UserName and Password";
                 }
-            }
-            else if(re==0)
-            {
-                ViewBag.Result = "Enter Correct UserName and Password";
-            }
             
             return View();
         }
