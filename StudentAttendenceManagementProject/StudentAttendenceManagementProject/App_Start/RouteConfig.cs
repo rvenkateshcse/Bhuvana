@@ -32,7 +32,7 @@ namespace StudentAttendenceManagementProject
             name: "Student",
             url: "{controller}/{action}/{id}",
             defaults: new { controller = "StudentPage", action = "Student", id = UrlParameter.Optional }
-        );
+         );
         }
     }
 }

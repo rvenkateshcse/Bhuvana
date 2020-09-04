@@ -8,12 +8,10 @@ namespace StudentAttendenceManagementProject.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index(Models.StudentModel student)
+        public ActionResult Index(string UserName, string Password, string Role)
         {
-            string UserName = student.UserName;
-            string Password = student.Password;
-            string Role = Request.Params["Btn1"];
-                int re = Services.LogInservice.Login(UserName, Password);
+            
+            int re = Services.LogInservice.Login(UserName, Password);
                 if (re == 1)
                 {
                     if (Role== "Staff")
@@ -29,7 +27,6 @@ namespace StudentAttendenceManagementProject.Controllers
                 {
                     ViewBag.Result = "Enter Correct UserName and Password";
                 }
-            
             return View();
         }
 
