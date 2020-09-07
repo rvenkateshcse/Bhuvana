@@ -11,7 +11,7 @@ namespace StudentAttendenceManagementProject.Controllers
         // GET: StaffPage
         public ActionResult Staff(Models.StudentModel student)
         {
-            int Re = Services.LogInservice.Staff(student.StudentName, student.AttendedDays);
+            int Re = Services.LogInservice.Staff(student.Sn, student.Ad);
             if (Re == 1)
             {
                 ViewBag.Message="Data Updated";

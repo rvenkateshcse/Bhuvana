@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StudentAttendenceManagementProject.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,9 +9,12 @@ namespace StudentAttendenceManagementProject.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index(string UserName, string Password, string Role)
+        [HttpPost]
+        public ActionResult Index(StudentModel obj)
         {
-            
+            string UserName =obj.Un;
+            string Password = obj.Pwd;
+            string Role =obj.Rol;
             int re = Services.LogInservice.Login(UserName, Password);
                 if (re == 1)
                 {

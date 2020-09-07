@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StudentAttendenceManagementProject.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,9 +10,9 @@ namespace StudentAttendenceManagementProject.Controllers
     public class RegistrationController : Controller
     {
         // GET: Registration
-        public ActionResult Register(Models.StudentModel student)
+        public ActionResult Register(StudentModel student)
         {
-            int Re = Services.LogInservice.Register(student.StudentName,student.UserName,student.Password);
+            int Re = Services.LogInservice.Register(student.Sn,student.Un,student.Pwd);
             if (Re == 1)
             {
                 Response.Redirect("Home/Index");

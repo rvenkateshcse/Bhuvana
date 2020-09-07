@@ -11,7 +11,7 @@ namespace StudentAttendenceManagementProject.Controllers
         // GET: StudentPage
         public ActionResult Student(Models.StudentModel student)
         {
-            string Re = Services.LogInservice.Student(student.StudentName);
+            string Re = Services.LogInservice.Student(student.Sn);
             if (Re != " ")
             {
                 ViewBag.Result = "Your Data";
