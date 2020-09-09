@@ -1,25 +1,25 @@
 ﻿
-@model StudentAttendenceManagementProject.Models.StudentModel
-
 @{
     ViewBag.Title = "Login";
 }
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    @Html.Label("UserName:")
+    @Html.TextBox("Un")
+    <br />
+    <br />
+    <br />
+    @Html.Label("Password:")
+    @Html.TextBox("Pwd")
+    <br />
+    <br />
+    <br />
+    @Html.Label("Role:")
+    @Html.TextBox("Rol")
+    <br />
+    <br />
+    <br />
+    <input type="submit" value="Login" />
+    @Html.ActionLink("Register", "Register", "Registration", null, null);
 
-
-<h2>LoginForm</h2>
-<b>UserName:</b>&nbsp;&nbsp;&nbsp;&nbsp;
-<input id="Text1" type="text" name="Un" />
-<br />
-<br />
-<b>Password:</b>&nbsp;&nbsp;&nbsp;&nbsp;
-<input id="Text1" type="password" name="Pwd" />
-<br />
-<br />
-<br />
-<b>Role:</b> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<input id="Text1" type="text" name="Rol" />
-<br />
-<br />
-<br />
-<input id="button" type="submit" name="Btn1" value="Login" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Html.ActionLink("Register", "Register", "Registration", null, null);
+}

@@ -31,7 +31,7 @@ namespace StudentAttendenceManagementProject
             routes.MapRoute(
             name: "Student",
             url: "{controller}/{action}/{id}",
-            defaults: new { controller = "StudentPage", action = "Student", id = UrlParameter.Optional }
+            defaults: new { controller = "StudentPage", action = "StudentView", id = UrlParameter.Optional }
          );
         }
     }

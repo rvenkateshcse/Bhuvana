@@ -3,18 +3,22 @@
     ViewBag.Title = "StudentView";
 }
 
-<h2>StudentPage</h2>
-<br />
-<br />
-<br />
-<b>StudentName:</b>&nbsp;&nbsp;&nbsp;&nbsp;@Html.TextBox("Sn")
-<br />
-<br />
-<br />
-<b>AttendedDays:</b>&nbsp;&nbsp;&nbsp;&nbsp;@Html.TextBox("Ad")
-<br />
-<br />
-<br />
-<button type="submit"> Show </button>
+@using (Html.BeginForm("StudentView", "StudentPage", FormMethod.Post))
+{
+    @Html.Label("StudentName:")
+    @Html.TextBox("Sn")
+    <br />
+    <br />
+    <br />
+    @Html.Label("AttendedDays:")
+    @Html.TextBox("Ad")
+    <br />
+    <br />
+    <br />
+    <input type="submit" value="Show" />
+
+
+}
+
 
 

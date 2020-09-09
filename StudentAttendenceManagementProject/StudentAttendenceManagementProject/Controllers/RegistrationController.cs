@@ -10,9 +10,9 @@ namespace StudentAttendenceManagementProject.Controllers
     public class RegistrationController : Controller
     {
         // GET: Registration
-        public ActionResult Register(StudentModel student)
+        public ActionResult Register(string Sn,string Un,string Pwd)
         {
-            int Re = Services.LogInservice.Register(student.Sn,student.Un,student.Pwd);
+            int Re = Services.LogInservice.Register(Sn,Un,Pwd);
             if (Re == 1)
             {
                 Response.Redirect("Home/Index");

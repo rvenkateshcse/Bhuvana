@@ -1,24 +1,24 @@
-﻿@model  StudentAttendenceManagementProject.Models.StudentModel
+﻿
 @{
     ViewBag.Title = "Register";
 }
 
-<h2>RegistrationForm</h2>
-<br />
-<br />
-<br />
-<b>StudentName:</b>&nbsp;&nbsp;&nbsp;&nbsp;@Html.TextBox("Sn");
-<br />
-<br />
-<br />
-<b>UserName:</b>&nbsp;&nbsp;&nbsp;&nbsp;@Html.TextBox("Un");
-<br />
-<br />
-<br />
-<b>Password:</b>&nbsp;&nbsp;&nbsp;&nbsp;@Html.TextBox("Pwd");
-<br />
-<br />
-<br />
-<input type="button" value="Register" onclick="@("window.location.href='"+Url.Action("Index","Home")+"' ");" />
-
-
+@using (Html.BeginForm("Register", "Registration", FormMethod.Post))
+{
+    @Html.Label("StudentName:")
+    @Html.TextBox("Sn")
+    <br />
+    <br />
+    <br />
+    @Html.Label("UserName:")
+    @Html.TextBox("Sn")
+    <br />
+    <br />
+    <br />
+    @Html.Label("Password:")
+    @Html.TextBox("Pwd")
+    <br />
+    <br />
+    <br />  
+    <input type="submit" value="Register" onclick="@("window.location.href='"+@Url.Action("Index","Home")+"'");" />
+}

@@ -1,20 +1,21 @@
-﻿@model StudentAttendenceManagementProject.Models.StudentModel
-@{
+﻿@{
     ViewBag.Title = "Staff";
 }
 
-<h2>StaffPage</h2>
-<br />
-<br />
-<br />
-<b>StudentName:</b>&nbsp;&nbsp;&nbsp;&nbsp;@Html.TextBox("Sn")
-<br />
-<br />
-<br />
-<b>AttendedDays:</b>&nbsp;&nbsp;&nbsp;&nbsp;@Html.TextBox("Ad")
-<br />
-<br />
-<br />
-<button type="submit"> Update </button>
+@using (Html.BeginForm("Staff", "StaffPage", FormMethod.Post))
+{
+    @Html.Label("StudentName:")
+    @Html.TextBox("Sn")
+    <br />
+    <br />
+    <br />
+    @Html.Label("AttendedDays:")
+    @Html.TextBox("Ad")
+    <br />
+    <br />
+    <br />
+    <input type="submit" value="Update" />
+    
 
+}
 

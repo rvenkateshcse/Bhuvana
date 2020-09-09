@@ -9,9 +9,9 @@ namespace StudentAttendenceManagementProject.Controllers
     public class StaffPageController : Controller
     {
         // GET: StaffPage
-        public ActionResult Staff(Models.StudentModel student)
+        public ActionResult Staff(string Sn,int  Ad)
         {
-            int Re = Services.LogInservice.Staff(student.Sn, student.Ad);
+            int Re = Services.LogInservice.Staff(Sn,Ad);
             if (Re == 1)
             {
                 ViewBag.Message="Data Updated";

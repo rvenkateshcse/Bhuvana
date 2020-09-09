@@ -9,32 +9,31 @@ namespace StudentAttendenceManagementProject.Controllers
 {
     public class HomeController : Controller
     {
-        [HttpPost]
-        public ActionResult Index(StudentModel obj)
+        
+        public ActionResult Index(string Un, string Pwd, string Rol)
         {
-            string UserName =obj.Un;
-            string Password = obj.Pwd;
-            string Role =obj.Rol;
-            int re = Services.LogInservice.Login(UserName, Password);
-                if (re == 1)
+
+            int re = Services.LogInservice.Login(Un, Pwd);
+            if (re == 1)
+            {
+                if (Rol == "Staff")
                 {
-                    if (Role== "Staff")
-                    {
-                      return RedirectToAction("Staff");
-                    }
-                    else if (Role == "Student")
-                    {
-                       return RedirectToAction("Student");
-                    }
+                    return RedirectToAction("Staff", "StaffPage");
                 }
-                else if (re == 0)
+                else if (Rol == "Student")
                 {
-                    ViewBag.Result = "Enter Correct UserName and Password";
+                    return RedirectToAction("StudentView", "StudentPage");
                 }
+            }
+            else if (re == 0)
+            {
+                ViewBag.Res= "Enter Correct UserName and Password";
+                
+            }
             return View();
         }
 
-       
-       
+
+
     }
 }
