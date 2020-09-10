@@ -22,7 +22,7 @@ namespace StudentAttendenceManagementProject.Controllers
                 }
                 else if (Rol == "Student")
                 {
-                    return RedirectToAction("StudentView", "StudentPage");
+                    return RedirectToAction("Student", "StudentPage");
                 }
             }
             else if (re == 0)

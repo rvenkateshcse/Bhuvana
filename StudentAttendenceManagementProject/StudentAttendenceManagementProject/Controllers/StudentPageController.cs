@@ -8,14 +8,11 @@ namespace StudentAttendenceManagementProject.Controllers
 {
     public class StudentPageController : Controller
     {
-        // GET: StudentPage
+       
         public ActionResult Student(string Sn)
         {
             string Re = Services.LogInservice.Student(Sn);
-            if (Re != " ")
-            {
-                ViewBag.Result = "Your Data";
-            }
+            ViewBag.Ans = Re;
             return View();
         }
     }

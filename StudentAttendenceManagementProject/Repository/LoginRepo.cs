@@ -39,26 +39,26 @@ namespace Repository
         }
         public static int Staff(string Sn, int Ad)
         {
-            int Res;
+            
             SqlConnection con = new SqlConnection(@"data source=DESKTOP-HQNFTEO;initial catalog=master;integrated security=true");
             con.Open();
-            SqlCommand cmd = new SqlCommand("update  StudentAttendanceTable('AttendedDays') set AttendedDays='"+Ad+"' where StudentName='"+Sn+"' ", con);
-            Res = cmd.ExecuteNonQuery() == 1?1:0;
+            SqlCommand cmd = new SqlCommand("update  StudentAttendanceTable set AttendedDays='"+Ad+"' where StudentName='"+Sn+"' ", con);
+            cmd.Parameters.AddWithValue("AttendedDays", Ad);
+            cmd.ExecuteNonQuery();
             con.Close();
-
-            return Res;
+            return 1;
 
         }
         public static string Student(string Sn)
         {
-            string Res=" ";
+            string Res = " ";
             SqlConnection con = new SqlConnection(@"data source=DESKTOP-HQNFTEO;initial catalog=master;integrated security=true");
             con.Open();
             SqlCommand cmd = new SqlCommand("select AttendedDays from StudentAttendanceTable where StudentName='" + Sn + "' ", con);
             SqlDataReader sdr = cmd.ExecuteReader();
             if(sdr.Read())
             {
-                Res = Convert.ToString(sdr);
+                Res = sdr.GetValue(0).ToString();
             }
             return Res;
            
