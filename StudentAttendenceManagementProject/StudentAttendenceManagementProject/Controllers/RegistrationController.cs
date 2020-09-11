@@ -1,5 +1,4 @@
-﻿using StudentAttendenceManagementProject.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,13 +8,13 @@ namespace StudentAttendenceManagementProject.Controllers
 {
     public class RegistrationController : Controller
     {
-        // GET: Registration
+        
         public ActionResult Register(string Sn,string Un,string Pwd)
         {
             int Re = Services.LogInservice.Register(Sn,Un,Pwd);
             if (Re == 1)
             {
-                Response.Redirect("Home/Index");
+                return RedirectToAction("Index", "Home");
             }
             else if (Re == 0)
             {

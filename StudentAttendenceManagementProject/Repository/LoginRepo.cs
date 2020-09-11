@@ -27,14 +27,14 @@ namespace Repository
         }
         public static int Register(string Sn, string Un, string pd)
         {
-            int Res;
+            
             SqlConnection con = new SqlConnection(@"data source=DESKTOP-HQNFTEO;initial catalog=master;integrated security=true");
             con.Open();
             SqlCommand cmd = new SqlCommand("insert into  StudentAttendanceTable( StudentName , UserName , Password ) values  ('" + Sn + "' , '" + Un + "' , '" + pd + "')  ", con);
-            Res = cmd.ExecuteNonQuery() == 3 ? 1 : 0;
+            cmd.ExecuteNonQuery();
             con.Close();
 
-            return Res;
+            return 1;
 
         }
         public static int Staff(string Sn, int Ad)

@@ -21,6 +21,6 @@
     <br />
     <br />
     <input type="submit" value="Login" />
-    @Html.ActionLink("Register", "Register", "Registration", null, null);
+    <input type="submit" value="Register" onclick="@("window.location.href='"+@Url.Action("Register","Registration")+"'");" />
 
 }
