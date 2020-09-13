@@ -33,7 +33,6 @@ namespace Repository
             SqlCommand cmd = new SqlCommand("insert into  StudentAttendanceTable( StudentName , UserName , Password ) values  ('" + Sn + "' , '" + Un + "' , '" + pd + "')  ", con);
             cmd.ExecuteNonQuery();
             con.Close();
-
             return 1;
 
         }

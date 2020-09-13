@@ -5,19 +5,20 @@
 @using (Html.BeginForm("Register", "Registration", FormMethod.Post))
 {
     @Html.Label("StudentName:")
-    @Html.TextBox("Sn")
+    @Html.TextBox("SN")
     <br />
     <br />
     <br />
     @Html.Label("UserName:")
-    @Html.TextBox("Un")
+    @Html.TextBox("UN")
     <br />
     <br />
     <br />
     @Html.Label("Password:")
-    @Html.TextBox("Pwd")
+    @Html.TextBox("PWD")
     <br />
     <br />
-    <br />  
-    <input type="submit" value="Register"  />
+    <br />
+    <input type="button" value="Register" onclick="@("window.location.href='"+@Url.Action("Index","Home")+"'");" />
+
 }
