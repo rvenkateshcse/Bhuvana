@@ -1,24 +1,34 @@
-﻿@{
+﻿
+@{
     ViewBag.Title = "Register";
 }
 
 @using (Html.BeginForm("Register", "Registration", FormMethod.Post))
 {
-    @Html.Label("StudentName:")
-    @Html.TextBox("SN")
+    <td>StudentName:</td>
+    <td>
+        @Html.TextBox("Sn")
+    </td>
+    <tr />
+    <tr />
+    <tr />
     <br />
+    <td>UserName:</td>
+    <td>
+        @Html.TextBox("Un")
+    </td>
+    <tr />
+    <tr />
+    <tr />
     <br />
+    <td>Password:</td>
+    <td>
+        @Html.TextBox("Pwd")
+    </td>
+    <tr />
+    <tr />
+    <tr />
     <br />
-    @Html.Label("UserName:")
-    @Html.TextBox("UN")
-    <br />
-    <br />
-    <br />
-    @Html.Label("Password:")
-    @Html.TextBox("PWD")
-    <br />
-    <br />
-    <br />
-    <input type="button" value="Register"  />
+    <input type="submit" value="Register" onclick="@("window.location.href='"+@Url.Action("Index","Home")+"'");"  />
 
 }

@@ -10,12 +10,12 @@ namespace StudentAttendenceManagementProject.Controllers
     public class RegistrationController : Controller
     {
         
-        public ActionResult Register(string SN,string UN,string PWD)
+        public ActionResult Register(string Sn,string Un,string Pwd)
         {
-            int Re = Services.LogInservice.Register(SN,UN,PWD);
+            int Re = Services.LogInservice.Register(Sn,Un,Pwd);
             if (Re == 1)
             {
-                return RedirectToAction("Index", "Home");
+                ViewBag.Res = "Data inserted";
             }
             return View();
         }
