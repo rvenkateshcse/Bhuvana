@@ -9,7 +9,7 @@ namespace StudentAttendenceManagementProject.Controllers
 {
     public class HomeController : Controller
     {
-        
+        [HttpPost]
         public ActionResult Index(string Un, string Pwd, string Rol)
         {
 
