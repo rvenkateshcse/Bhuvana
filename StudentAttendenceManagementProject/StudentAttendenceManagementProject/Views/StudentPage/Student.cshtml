@@ -2,7 +2,7 @@
     ViewBag.Title = "StudentView";
 }
 
-@using (Html.BeginForm("StudentView", "StudentPage", FormMethod.Post))
+@using (Html.BeginForm("Student", "StudentPage", FormMethod.Post))
 {
     @Html.Label("StudentName:")
     @Html.TextBox("Sn")
@@ -15,10 +15,5 @@
     <br />
     <br />
     <input type="submit" value="Show" />
-   
-
-
+  
 }
-
-
-
