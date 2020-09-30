@@ -5,7 +5,7 @@
 @using (Html.BeginForm("Student", "StudentPage", FormMethod.Post))
 {
     @Html.Label("StudentName:")
-    @Html.TextBox("Sn")
+    <input type="text" name="Sn" required='true' />
     <br />
     <br />
     <br />

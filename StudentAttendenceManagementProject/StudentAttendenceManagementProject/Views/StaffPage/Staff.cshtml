@@ -5,12 +5,12 @@
 @using (Html.BeginForm("Staff", "StaffPage", FormMethod.Post))
 {
     @Html.Label("StudentName:")
-    @Html.TextBox("Sn")
+    <input type="text" name="Sn" required='true' />
     <br />
     <br />
     <br />
     @Html.Label("AttendedDays:")
-    @Html.TextBox("Ads")
+<input type="text" name="Ads" required='true' />
     <br />
     <br />
     <br />
