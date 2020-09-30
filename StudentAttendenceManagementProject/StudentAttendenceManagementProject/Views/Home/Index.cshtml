@@ -1,4 +1,4 @@
-﻿
+﻿@model StudentAttendenceManagementProject.Models.StudentModel
 @{
     ViewBag.Title = "Login";
 }
@@ -6,17 +6,17 @@
 @using (Html.BeginForm("Index", "Home", FormMethod.Post))
 {
     @Html.Label("UserName:")
-    <input type="text" name="Un" />
+    @Html.TextBoxFor(m => m.Un)
     <br />
     <br />
     <br />
     @Html.Label("Password:")
-    <input type="text" name="Pwd" />
+    @Html.TextBoxFor(m => m.Pwd)
     <br />
     <br />
     <br />
     @Html.Label("Role:")
-    <input type="text" name="Rol" />
+    @Html.TextBoxFor(m => m.Rol)
     <br />
     <br />
     <br />
