@@ -6,21 +6,21 @@
 @using (Html.BeginForm("Index", "Home", FormMethod.Post))
 {
     @Html.Label("UserName:")
-    @Html.TextBox("Un")
+    <input type="text" name="Un" />
     <br />
     <br />
     <br />
     @Html.Label("Password:")
-    @Html.TextBox("Pwd")
+    <input type="text" name="Pwd" />
     <br />
     <br />
     <br />
     @Html.Label("Role:")
-    @Html.TextBox("Rol")
+    <input type="text" name="Rol" />
     <br />
     <br />
     <br />
     <input type="submit" value="Login" />
     <input type="button" value="Register" onclick="@("window.location.href='"+@Url.Action("Register","Registration")+"'");" />
-  
+
 }
