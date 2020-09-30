@@ -26,7 +26,8 @@ namespace StudentAttendenceManagementProject.Controllers
             }
             else if (re == 0)
             {
-                ViewBag.Res= "Enter Correct UserName and Password";
+                ViewBag.Message= "Enter Correct UserName and Password";
+                return View();
                 
             }
             return View();

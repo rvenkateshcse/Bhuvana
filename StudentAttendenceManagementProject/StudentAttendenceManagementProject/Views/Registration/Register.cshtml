@@ -9,26 +9,34 @@
     <td>
         @Html.TextBox("Sn")
     </td>
-    <tr />
-    <tr />
-    <tr />
+    <br />
+    <br />
+    <br />
     <br />
     <td>UserName:</td>
     <td>
         @Html.TextBox("Un")
     </td>
-    <tr />
-    <tr />
-    <tr />
+    <br />
+    <br />
+    <br />
     <br />
     <td>Password:</td>
     <td>
         @Html.TextBox("Pwd")
     </td>
-    <tr />
-    <tr />
-    <tr />
+    <br />
+    <br />
+    <br />
     <br />
     <input type="submit" value="Register" />
     @Html.ActionLink("Login", "Index", "Home")
+    <br />
+    <br />
+    <br />
+    <br />
+    if(ViewBag.show!=null)
+    {
+        <h3 style="color:blue;font:bold;">@ViewBag.show</h3>
+    }
 }   

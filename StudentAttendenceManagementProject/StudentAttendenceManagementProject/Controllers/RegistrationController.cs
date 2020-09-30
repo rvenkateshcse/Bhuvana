@@ -15,7 +15,8 @@ namespace StudentAttendenceManagementProject.Controllers
             int Re = Services.LogInservice.Register(Sn,Un,Pwd);
             if (Re == 1)
             {
-                ViewBag.Show = "Data Inserted";
+                ViewBag.show = "Data Registered Successfully";
+                return View();
             }
         
             return View();
