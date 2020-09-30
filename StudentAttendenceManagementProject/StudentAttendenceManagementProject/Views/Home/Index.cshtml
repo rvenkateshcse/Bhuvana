@@ -3,23 +3,29 @@
     ViewBag.Title = "Login";
 }
 
-@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+@using (Html.BeginForm("Index", "Home",FormMethod.Post))
 {
-    @Html.Label("UserName:")
-    @Html.TextBoxFor(m => m.Un)
-    <br />
-    <br />
-    <br />
-    @Html.Label("Password:")
-    @Html.TextBoxFor(m => m.Pwd)
-    <br />
-    <br />
-    <br />
-    @Html.Label("Role:")
-    @Html.TextBoxFor(m => m.Rol)
-    <br />
-    <br />
-    <br />
+    <td>UserName:</td>
+    <td>
+        @Html.TextBoxFor(m => m.Un)
+    </td>
+    <tr />
+    <tr />
+    <tr />
+    <td>Password:</td>
+    <td>
+        @Html.TextBoxFor(m => m.Pwd)
+    </td>
+    <tr />
+    <tr />
+    <tr />
+    <td>Role:</td>
+    <td>
+        @Html.TextBoxFor(m => m.Rol)
+    </td>
+    <tr />
+    <tr />
+    <tr />
     <input type="submit" value="Login" />
     <input type="button" value="Register" onclick="@("window.location.href='"+@Url.Action("Register","Registration")+"'");" />
 
