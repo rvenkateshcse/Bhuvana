@@ -3,7 +3,7 @@
     ViewBag.Title = "Login";
 }
 
-@using (Html.BeginForm("Index", "Home",FormMethod.Post))
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
 {
     <td>UserName:</td>
     <td>
@@ -30,6 +30,5 @@
     <tr />
     <br />
     <input type="submit" value="Login" />
-    <input type="button" value="Register" onclick="@("window.location.href='"+@Url.Action("Register","Registration")+"'");" />
-
+   @Html.ActionLink("Register","Register","Registration")
 }
