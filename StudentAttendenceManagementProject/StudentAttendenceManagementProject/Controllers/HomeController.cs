@@ -5,25 +5,21 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+
 namespace StudentAttendenceManagementProject.Controllers
 {
     public class HomeController : Controller
     {
-       
-      [HttpPost]
-        public ActionResult Index(StudentModel student)
+        public ActionResult Index(string Un,string Pwd,string Rol)
         {
-            string Un = student.Un;
-            string Pwd = student.Pwd;
-            string Rol = student.Rol;
             int re = Services.LogInservice.Login(Un, Pwd);
             if (re == 1)
             {
-                if (Rol == "Staff")
+                if (Rol == "staff")
                 {
                     return RedirectToAction("Staff", "StaffPage");
                 }
-                else if (Rol == "Student")
+                else if (Rol == "student")
                 {
                     return RedirectToAction("Student", "StudentPage");
                 }

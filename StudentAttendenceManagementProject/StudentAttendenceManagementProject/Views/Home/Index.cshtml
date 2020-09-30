@@ -1,4 +1,4 @@
-﻿@model StudentAttendenceManagementProject.Models.StudentModel
+﻿
 @{
     ViewBag.Title = "Login";
 }
@@ -7,25 +7,28 @@
 {
     <td>UserName:</td>
     <td>
-        @Html.TextBoxFor(m => m.Un)
+        @Html.TextBox("Un")
     </td>
     <tr />
     <tr />
     <tr />
+    <br />
     <td>Password:</td>
     <td>
-        @Html.TextBoxFor(m => m.Pwd)
+        @Html.TextBox("Pwd")
     </td>
     <tr />
     <tr />
     <tr />
+    <br />
     <td>Role:</td>
     <td>
-        @Html.TextBoxFor(m => m.Rol)
+        @Html.TextBox("Rol")
     </td>
     <tr />
     <tr />
     <tr />
+    <br />
     <input type="submit" value="Login" />
     <input type="button" value="Register" onclick="@("window.location.href='"+@Url.Action("Register","Registration")+"'");" />
 
