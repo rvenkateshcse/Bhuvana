@@ -27,7 +27,12 @@ namespace Repository
         }
         public static int Register(string Sn, string Un, string pd)
         {
-            
+            int Res;
+            if ((string.IsNullOrEmpty(Un)) || (string.IsNullOrEmpty(pd)))
+            {
+                Res = 0;
+                return Res;
+            }
             SqlConnection con = new SqlConnection(@"data source=DESKTOP-HQNFTEO;initial catalog=master;integrated security=true");
             con.Open();
             SqlCommand cmd = new SqlCommand("insert into  StudentAttendanceTable( StudentName , UserName , Password ) values  ('" + Sn + "' , '" + Un + "' , '" + pd + "')  ", con);
