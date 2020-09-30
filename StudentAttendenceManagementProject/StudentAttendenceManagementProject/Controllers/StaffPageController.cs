@@ -16,10 +16,12 @@ namespace StudentAttendenceManagementProject.Controllers
             if (Re == 1)
             {
                 ViewBag.Message="Data Updated";
+                return View();
             }
             else if (Re == 0)
             {
                 ViewBag.Message = "Enter Student Attendence";
+                return View();
             }
             return View();
         }
