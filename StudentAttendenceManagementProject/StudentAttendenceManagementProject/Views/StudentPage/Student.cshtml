@@ -1,19 +1,39 @@
-﻿@{
+﻿<!DOCTYPE html>
+@{
     ViewBag.Title = "StudentView";
 }
+<div id="form">
+    @using (Html.BeginForm("Student", "StudentPage", FormMethod.Post))
+    {
+        <center>
+            <style>
+                .aligncenter {
+                    text-align: center
+                }
 
-@using (Html.BeginForm("Student", "StudentPage", FormMethod.Post))
-{
-    @Html.Label("StudentName:")
-    <input type="text" name="Sn" required='true' />
-    <br />
-    <br />
-    <br />
-    @Html.Label("AttendedDays:")
-    <input type="text" value="@ViewBag.Ans" name="Ad" />
-    <br />
-    <br />
-    <br />
-    <input type="submit" value="Show" />
-  
-}
+                body {
+                    height: 100%;
+                    width: 100%;
+                    margin: auto;
+                    opacity: 0.5;
+                    background-image: url('../../Image/pexels-ann-h-1762851 (1).jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-attachment: fixed;
+                    background-position: center;
+                }
+            </style>
+            @Html.Label("StudentName:")
+            <input type="text" name="Sn" required='true' />
+            <br />
+            <br />
+            <br />
+            @Html.Label("AttendedDays:")
+            <input type="text" value="@ViewBag.Ans" name="Ad" />
+            <br />
+            <br />
+            <br />
+            <input type="submit" value="Show" />
+        </center>
+    }
+</div>
