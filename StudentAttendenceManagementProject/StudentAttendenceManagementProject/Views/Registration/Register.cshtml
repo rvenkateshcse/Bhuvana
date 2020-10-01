@@ -1,39 +1,59 @@
-﻿
+﻿<!DOCTYPE html>
 @{
     ViewBag.Title = "Register";
 }
+    <div id="form">
+        @using (Html.BeginForm("Register", "Registration", FormMethod.Post))
+        {
+        <center>
+            <style>
+                .aligncenter {
+                    text-align: center
+                }
 
-@using (Html.BeginForm("Register", "Registration", FormMethod.Post))
-{
-    <td>StudentName:</td>
-    <td>
-        <input type="text" name="Sn" required='true' />
-    </td>
-    <br />
-    <br />
-    <br />
-    <br />
-    <td>UserName:</td>
-    <td>
-        <input type="text" name="Un" required='true' />
-    </td>
-    <br />
-    <br />
-    <br />
-    <br />
-    <td>Password:</td>
-    <td>
-        <input type="text" name="Pwd" required='true' />
-    </td>
-    <br />
-    <br />
-    <br />
-    <br />
-    <input type="submit" value="Register" />
-    @Html.ActionLink("Login", "Index", "Home")
-    <br />
-    <br />
-    <br />
-    <br />
-    
-}   
+                body {
+                    height: 100%;
+                    width: 100%;
+                    margin: auto;
+                    opacity: 0.5;
+                    background-image: url('../../Image/pexels-pixabay-326311 (1).jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-attachment: fixed;
+                    background-position: center;
+                }
+            </style>
+            <td>StudentName:</td>
+            <td>
+                <input type="text" name="Sn" required='true' />
+            </td>
+            <br />
+            <br />
+            <br />
+            <br />
+            <td>UserName:</td>
+            <td>
+                <input type="text" name="Un" required='true' />
+            </td>
+            <br />
+            <br />
+            <br />
+            <br />
+            <td>Password:</td>
+            <td>
+                <input type="text" name="Pwd" required='true' />
+            </td>
+            <br />
+            <br />
+            <br />
+            <br />
+            <input type="submit" value="Register" />
+            @Html.ActionLink("Login", "Index", "Home")
+            <br />
+            <br />
+            <br />
+            <br />
+        </center>
+
+                }
+        </div>
