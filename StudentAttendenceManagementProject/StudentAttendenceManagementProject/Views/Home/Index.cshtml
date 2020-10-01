@@ -18,7 +18,7 @@
                 width: 100%;
                 margin: auto;
                 opacity: 0.5;
-                background-image: url('Image/pexels-lumn-399161.jpg');
+                background-image: url('../../Image/micah-williams-lmFJOx7hPc4-unsplash.jpg');
                 background-repeat: no-repeat;
                 background-size: 1000px;
                 height: 1000px;
@@ -34,7 +34,8 @@
         <br />
         <br />
         <br />
-        <td>UserName:</td>
+        <br />
+        <label style="color:bisque;font:3000;">UserName:</label>
         <td>
             <input type="text" name="Un" required='true' />
         </td>
@@ -42,7 +43,7 @@
         <br />
         <br />
         <br />
-        <td>Password:</td>
+        <label style="color:bisque;font:3000;">Password:</label>
         <td>
             <input type="text" name="Pwd" required='true' />
         </td>
@@ -50,7 +51,7 @@
         <br />
         <br />
         <br />
-        <td>Role:</td>
+        <label style="color:bisque;font:3000;">Role:</label>
         <td>
             <input type="text" name="Rol" required='true' />
         </td>
@@ -59,7 +60,7 @@
         <br />
         <br />
         <input type="submit" value="Login" />
-        @Html.ActionLink("Register", "Register", "Registration")
+        @Html.ActionLink("Register", "Register", "Registration", null, new { style = "color:white" })
         <br />
         <br />
         <br />
