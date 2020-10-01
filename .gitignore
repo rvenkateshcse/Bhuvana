@@ -32,3 +32,8 @@
 /StudentAttendenceManagementProject/StudentAttendenceManagementProject/bin
 /StudentAttendenceManagementProject/StudentAttendenceManagementProject/obj/Debug
 /StudentAttendenceManagementProject/.vs/StudentAttendenceManagementProject
+/DatabaseOperation/obj/Release
+/LoginForm/obj/Release/netcoreapp3.1
+/.vs/slnx.sqlite
+/PalindromeNumber/obj/Release/netstandard2.0
+/StringFunctions/obj/Release/netstandard2.0
