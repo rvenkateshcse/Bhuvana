@@ -2,27 +2,25 @@
 @{
     ViewBag.Title = "Login";
 }
+
 <div id="form">
 
     @using (Html.BeginForm("Index", "Home", FormMethod.Post))
     {
-        <style media="all">
-            .form_table {
-                text-align: center
-            }
+        <style >.aligncenter{text-align:center}
 
             body {
-                height: 100;
-                margin: 0;
+                height: 100%;
+                width:100%;
+                margin: auto;
                 opacity: 0.5;
                 background-image: url('Image/micah-williams-lmFJOx7hPc4-unsplash.jpg');
                 background-repeat: no-repeat;
-                background-size: 100% 100%;
+                background-size: cover;
                 background-attachment: fixed;
                 background-position: center;
             }
         </style>
-      
         <td>UserName:</td>
         <td>
             <input type="text" name="Un" required='true' />
@@ -53,8 +51,8 @@
         <br />
         <br />
         <br />
-        
-       
+
+
     }
 
 </div>
