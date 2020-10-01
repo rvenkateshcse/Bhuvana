@@ -7,11 +7,11 @@ namespace Repository
 {
     public static class LoginRepo
     {
+      public static  string constr = ConfigurationManager.ConnectionStrings["connectionstring"].ConnectionString;
+      public static   SqlConnection con = new SqlConnection(constr);
         public static int Login(string Un, string pd)
         {
             int Res;
-            string constr = ConfigurationManager.ConnectionStrings["connectionstring"].ConnectionString;
-            SqlConnection con = new SqlConnection(constr);
             con.Open();
             SqlCommand cmd = new SqlCommand("select * from StudentAttendanceTable where UserName='" + Un + "' and  Password='" + pd + "' ",con);
             SqlDataReader sdr = cmd.ExecuteReader();
@@ -23,7 +23,7 @@ namespace Repository
             {
                 Res = 0;
             }
-
+            con.Close();
             return Res;
 
         }
@@ -35,8 +35,6 @@ namespace Repository
                 Res = 0;
                 return Res;
             }
-            string constr = ConfigurationManager.ConnectionStrings["connectionstring"].ConnectionString;
-            SqlConnection con = new SqlConnection(constr);
             con.Open();
             SqlCommand cmd = new SqlCommand("insert into  StudentAttendanceTable( StudentName , UserName , Password ) values  ('" + Sn + "' , '" + Un + "' , '" + pd + "')  ", con);
             cmd.ExecuteNonQuery();
@@ -47,8 +45,6 @@ namespace Repository
         public static int Staff(string Sn, int Ad)
         {
 
-            string constr = ConfigurationManager.ConnectionStrings["connectionstring"].ConnectionString;
-            SqlConnection con = new SqlConnection(constr);
             con.Open();
             SqlCommand cmd = new SqlCommand("update  StudentAttendanceTable set AttendedDays='"+Ad+"' where StudentName='"+Sn+"' ", con);
             cmd.Parameters.AddWithValue("AttendedDays", Ad);
@@ -60,8 +56,6 @@ namespace Repository
         public static string Student(string Sn)
         {
             string Res = " ";
-            string constr = ConfigurationManager.ConnectionStrings["connectionstring"].ConnectionString;
-            SqlConnection con = new SqlConnection(constr);
             con.Open();
             SqlCommand cmd = new SqlCommand("select AttendedDays from StudentAttendanceTable where StudentName='" + Sn + "' ", con);
             SqlDataReader sdr = cmd.ExecuteReader();
@@ -69,8 +63,9 @@ namespace Repository
             {
                 Res = sdr.GetValue(0).ToString();
             }
+            con.Close();
             return Res;
-           
+            
 
         }
     }
