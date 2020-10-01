@@ -5,38 +5,54 @@
 <div id="form"></div>
 @using (Html.BeginForm("Staff", "StaffPage", FormMethod.Post))
 {
-    <center>
-        <style>
-            .aligncenter {
-                text-align: center
-            }
+<center>
+    <style>
+        .aligncenter {
+            text-align: center
+        }
 
-            body {
-                height: 100%;
-                width: 100%;
-                margin: auto;
-                opacity: 0.5;
-                background-image: url('../../Image/pexels-lumn-399161.jpg');
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-attachment: fixed;
-                background-position: center;
-            }
-        </style>
-        @Html.Label("StudentName:")
-        <input type="text" name="Sn" required='true' />
-        <br />
-        <br />
-        <br />
-        @Html.Label("AttendedDays:")
-        <input type="text" name="Ads" required='true' />
-        <br />
-        <br />
-        <br />
-        <input type="submit" value="Update" />
-        <br />
-        <br />
-        <br />
+        body {
+            height: 100%;
+            width: 100%;
+            margin: auto;
+            opacity: 0.5;
+            background-image: url('../../Image/pexels-lumn-399161.jpg');
+            background-repeat: no-repeat;
+            background-size: 1000px;
+            height: 1000px;
+            width: -1000px;
+            background-attachment: fixed;
+            background-position: center;
+        }
+    </style>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1>Staff Form</h1>
+    <br />
+    <br />
+    <br />
+    @Html.Label("StudentName:")
+    <input type="text" name="Sn" required='true' />
+    <br />
+    <br />
+    <br />
+    @Html.Label("AttendedDays:")
+    <input type="text" name="Ads" required='true' />
+    <br />
+    <br />
+    <br />
+    <input type="submit" value="Update" />
+    <br />
+    <br />
+    <br />
 
 </center>
 
