@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Web;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace Repository
 {
@@ -9,9 +10,10 @@ namespace Repository
         public static int Login(string Un, string pd)
         {
             int Res;
-            SqlConnection con = new SqlConnection(@"data source=DESKTOP-HQNFTEO;initial catalog=master;integrated security=true");
+            string constr = ConfigurationManager.ConnectionStrings["connectionstring"].ConnectionString;
+            SqlConnection con = new SqlConnection(constr);
             con.Open();
-            SqlCommand cmd = new SqlCommand("select * from StudentAttendanceTable where UserName='" + Un + "' and  Password='" + pd + "' ", con);
+            SqlCommand cmd = new SqlCommand("select * from StudentAttendanceTable where UserName='" + Un + "' and  Password='" + pd + "' ",con);
             SqlDataReader sdr = cmd.ExecuteReader();
             if (sdr.Read())
             {
@@ -33,7 +35,8 @@ namespace Repository
                 Res = 0;
                 return Res;
             }
-            SqlConnection con = new SqlConnection(@"data source=DESKTOP-HQNFTEO;initial catalog=master;integrated security=true");
+            string constr = ConfigurationManager.ConnectionStrings["connectionstring"].ConnectionString;
+            SqlConnection con = new SqlConnection(constr);
             con.Open();
             SqlCommand cmd = new SqlCommand("insert into  StudentAttendanceTable( StudentName , UserName , Password ) values  ('" + Sn + "' , '" + Un + "' , '" + pd + "')  ", con);
             cmd.ExecuteNonQuery();
@@ -43,8 +46,9 @@ namespace Repository
         }
         public static int Staff(string Sn, int Ad)
         {
-            
-            SqlConnection con = new SqlConnection(@"data source=DESKTOP-HQNFTEO;initial catalog=master;integrated security=true");
+
+            string constr = ConfigurationManager.ConnectionStrings["connectionstring"].ConnectionString;
+            SqlConnection con = new SqlConnection(constr);
             con.Open();
             SqlCommand cmd = new SqlCommand("update  StudentAttendanceTable set AttendedDays='"+Ad+"' where StudentName='"+Sn+"' ", con);
             cmd.Parameters.AddWithValue("AttendedDays", Ad);
@@ -56,7 +60,8 @@ namespace Repository
         public static string Student(string Sn)
         {
             string Res = " ";
-            SqlConnection con = new SqlConnection(@"data source=DESKTOP-HQNFTEO;initial catalog=master;integrated security=true");
+            string constr = ConfigurationManager.ConnectionStrings["connectionstring"].ConnectionString;
+            SqlConnection con = new SqlConnection(constr);
             con.Open();
             SqlCommand cmd = new SqlCommand("select AttendedDays from StudentAttendanceTable where StudentName='" + Sn + "' ", con);
             SqlDataReader sdr = cmd.ExecuteReader();
