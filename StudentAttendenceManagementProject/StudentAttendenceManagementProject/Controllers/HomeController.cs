@@ -27,17 +27,24 @@ namespace StudentAttendenceManagementProject.Controllers
                     Port = 587,
                     EnableSsl = true,
                     DeliveryMethod=SmtpDeliveryMethod.Network,
-                    Use DefaultCredentials = false,
-                    Credentials=new NetworkCredential(senderEmail,Address)
+                   
                 };
-                if (Rol == "staff")
+                using (var mess = new MailMessage(senderEmail, receiverEmail)
                 {
-                    return RedirectToAction("Staff", "StaffPage");
-                }
-                else if (Rol == "student")
+                    Subject = subject,
+                    Body = body
+                })
                 {
-                    return RedirectToAction("Student", "StudentPage");
+                    smtp.Send(mess);
                 }
+                    if (Rol == "staff")
+                    {
+                        return RedirectToAction("Staff", "StaffPage");
+                    }
+                    else if (Rol == "student")
+                    {
+                        return RedirectToAction("Student", "StudentPage");
+                    }
             }
             else if (re == 0)
             {
