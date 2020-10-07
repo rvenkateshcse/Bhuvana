@@ -17,26 +17,6 @@ namespace StudentAttendenceManagementProject.Controllers
             int re = Services.LogInservice.Login(Un, Pwd);
             if (re == 1)
             {
-                var senderEmail = new MailAddress("rbhuvaneswariece@gmail.com");
-                var receiverEmail = new MailAddress(Receiver,"Receiver");
-                var sub = subject;
-                var body = Message;
-                var smtp = new SmtpClient
-                {
-                    Host = "smtp.gmail.com",
-                    Port = 587,
-                    EnableSsl = true,
-                    DeliveryMethod=SmtpDeliveryMethod.Network,
-                   
-                };
-                using (var mess = new MailMessage(senderEmail, receiverEmail)
-                {
-                    Subject = subject,
-                    Body = body
-                })
-                {
-                    smtp.Send(mess);
-                }
                     if (Rol == "staff")
                     {
                         return RedirectToAction("Staff", "StaffPage");

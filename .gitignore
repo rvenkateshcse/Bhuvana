@@ -37,3 +37,5 @@
 /.vs/slnx.sqlite
 /PalindromeNumber/obj/Release/netstandard2.0
 /StringFunctions/obj/Release/netstandard2.0
+/StudentAttendenceManagementProject/StudentsAttendenceManagementProj/bin
+/StudentAttendenceManagementProject/StudentsAttendenceManagementProj/obj/Debug
