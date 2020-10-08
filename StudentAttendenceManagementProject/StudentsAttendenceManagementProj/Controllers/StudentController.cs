@@ -10,9 +10,10 @@ namespace StudentsAttendenceManagementProj.Controllers
 {
     public class StudentController : ApiController
     {
-        public IHttpActionResult Login(StudentClass student)
+       public IHttpActionResult Login(LoginClass Lc)
         {
-           
+            return Ok();
         }
+        
     }
 }

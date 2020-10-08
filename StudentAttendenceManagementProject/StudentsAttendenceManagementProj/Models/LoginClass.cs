@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace StudentsAttendenceManagementProj.Models
 {
-    public class StudentClass
+    public class LoginClass
     {
         [Required(ErrorMessage ="Please Enter Name")]
         [Display(Name = "UserName")]
@@ -16,7 +16,7 @@ namespace StudentsAttendenceManagementProj.Models
         [Required(ErrorMessage = "Please Enter Password")]
         [Display(Name = "Password")]
         public string Password { get; set; }
-       
+        
         [Required(ErrorMessage = "Please Enter Role")]
         [Display(Name = "Role")]
         public string Role { get; set; }
