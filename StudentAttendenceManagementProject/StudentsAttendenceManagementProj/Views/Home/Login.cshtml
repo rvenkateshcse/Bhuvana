@@ -1,0 +1,39 @@
+﻿@inherits System.Web.Mvc.ViewStartPage
+
+@{
+     ViewBag.Title = "Login";
+    Layout = "~/Views/_ViewStart.cshtml";
+}
+
+<h2>LoginForm</h2>
+<label style="color:bisque;font:3000;">UserName:</label>
+<td>
+    <input type="text" name="Un" required='true' />
+</td>
+<br />
+<br />
+<br />
+<br />
+<label style="color:bisque;font:3000;">Password:</label>
+<td>
+    <input type="text" name="Pwd" required='true' />
+</td>
+<br />
+<br />
+<br />
+<br />
+<label style="color:bisque;font:3000;">Role:</label>
+<td>
+    <input type="text" name="Rol" required='true' />
+</td>
+<br />
+<br />
+<br />
+<br />
+<input type="submit" value="Login" />
+@Html.ActionLink("Register", "Register", "Registration", null, new { style = "color:white" })
+<br />
+<br />
+<br />
+<br />
+

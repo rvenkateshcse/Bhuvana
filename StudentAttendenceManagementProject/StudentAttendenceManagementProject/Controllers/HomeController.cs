@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using System.Net.Mail;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.UI.WebControls;
@@ -12,7 +11,7 @@ namespace StudentAttendenceManagementProject.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index(string Un,string Pwd,string Rol,string Receiver,string subject,string Message)
+        public ActionResult Index(string Un,string Pwd,string Rol)
         {
             int re = Services.LogInservice.Login(Un, Pwd);
             if (re == 1)

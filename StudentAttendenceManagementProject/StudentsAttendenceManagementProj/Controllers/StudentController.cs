@@ -12,8 +12,8 @@ namespace StudentsAttendenceManagementProj.Controllers
     {
        public IHttpActionResult Login(LoginClass Lc)
         {
+            int re = Services.LogInservice.Login(Lc.UserName, Lc.Password);
             return Ok();
         }
-        
     }
 }
