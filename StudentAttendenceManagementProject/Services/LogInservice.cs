@@ -5,29 +5,34 @@ using System.Text;
 
 
 
+
 namespace Services
 {
-    public class LogInservice
+    public  class LogInservice
     {
-        public static int Login(string Un, string pd)
+        public  int Login(string Un, string pd)
         {
-            int re =Repository.LoginRepo.Login(Un,pd);
+            LogInservice logInservice = new LogInservice();
+            int re= logInservice. Login(Un, pd);
             return re;
         }
-        public static int Register(string Sn,string Un,string Pd)
+        public int Register(string Sn, string Un, string Pd)
         {
-            int Re =LoginRepo.Register(Sn, Un, Pd);
-            return Re;
+            LogInservice logInservice = new LogInservice();
+            int re = logInservice.Register(Sn, Un, Pd);
+            return re;
         }
-        public static int Staff(string Sn, int Ad)
+        public int Staff(string Sn, int Ad)
         {
-            int Re =LoginRepo.Staff(Sn, Ad);
-            return Re;
+            LogInservice logInservice = new LogInservice();
+            int re = logInservice.Staff(Sn, Ad);
+            return re;
         }
-        public static string Student(string Sn)
+        public string Student(string Sn)
         {
-            string Re = LoginRepo.Student(Sn);
-            return Re;
+            LogInservice logInservice = new LogInservice();
+            string re = logInservice.Student(Sn);
+            return re;
         }
     }
 }
