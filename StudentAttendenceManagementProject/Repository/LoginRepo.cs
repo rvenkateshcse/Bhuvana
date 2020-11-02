@@ -5,19 +5,12 @@ using System.Configuration;
 
 namespace Repository
 {
-
-    public abstract class LoginRepo
+    public static class LoginRepo
     {
         public static string constr = ConfigurationManager.ConnectionStrings["connectionstring"].ConnectionString;
         public static SqlConnection con = new SqlConnection(constr);
-        public  abstract int Login(string Un, string pd);
-        public  abstract int Register(string Sn, string Un, string pd);
-        public  abstract int Staff(string Sn, int Ad);
-        public  abstract string Student(string Sn);
-    }
-    public class Home : LoginRepo
-    {
-        public  override int Login(string Un, string pd)
+
+        public static int Login(string Un, string pd)
         {
             int Res;
             con.Open();
@@ -35,7 +28,7 @@ namespace Repository
             return Res;
         }
 
-        public override int Register(string Sn, string Un, string pd)
+        public static int Register(string Sn, string Un, string pd)
         {
             int Res;
             if ((string.IsNullOrEmpty(Un)) || (string.IsNullOrEmpty(pd)))
@@ -50,7 +43,7 @@ namespace Repository
             return 1;
         }
 
-        public override int Staff(string Sn, int Ad)
+        public static int Staff(string Sn, int Ad)
         {
             con.Open();
             SqlCommand cmd = new SqlCommand("update  StudentAttendanceTable set AttendedDays='" + Ad + "' where StudentName='" + Sn + "' ", con);
@@ -60,7 +53,7 @@ namespace Repository
             return 1;
         }
 
-        public override string Student(string Sn)
+        public static string Student(string Sn)
         {
             string Res = " ";
             con.Open();
@@ -74,7 +67,8 @@ namespace Repository
             return Res;
         }
     }
+}
 
-}      
+     
        
         

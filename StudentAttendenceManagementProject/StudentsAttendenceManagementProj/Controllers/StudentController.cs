@@ -13,8 +13,8 @@ namespace StudentsAttendenceManagementProj.Controllers
     {
        public IHttpActionResult Login(LoginClass Lc)
         {
-            Student student = new Student();
-            int re = student.Login(Lc.UserName, Lc.Password);
+            
+            int re = Services.LogInservice.Login(Lc.UserName, Lc.Password);
             return Ok();
         }
     }
