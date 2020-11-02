@@ -1,4 +1,5 @@
-﻿using StudentAttendenceManagementProject.Models;
+﻿using Repository;
+using StudentAttendenceManagementProject.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,8 +14,8 @@ namespace StudentAttendenceManagementProject.Controllers
     {
         public ActionResult Index(string Un,string Pwd,string Rol)
         {
-           
-            int re=Services.LogInservice.Login(Un, Pwd);
+            Home hc = new Home();
+            int re =hc.Login(Un, Pwd);
             if (re == 1)
             {
                     if (Rol == "staff")
