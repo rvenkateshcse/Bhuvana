@@ -132,6 +132,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProgramsController.cs" />
     <Compile Include="Controllers\RegistrationController.cs" />
     <Compile Include="Controllers\StaffPageController.cs" />
     <Compile Include="Controllers\StudentPageController.cs" />
@@ -191,6 +192,7 @@
     <Content Include="Views\Registration\Register.cshtml" />
     <Content Include="Views\StaffPage\Staff.cshtml" />
     <Content Include="Views\StudentPage\Student.cshtml" />
+    <Content Include="Views\Programs\Programs.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

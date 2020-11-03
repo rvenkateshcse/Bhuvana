@@ -12,20 +12,23 @@ namespace StudentAttendenceManagementProject.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index(string Un,string Pwd,string Rol)
+        public ActionResult Index(string Un, string Pwd, string Rol)
         {
-           
             int re =Services.LogInservice.Login(Un, Pwd);
             if (re == 1)
             {
-                    if (Rol == "staff")
-                    {
-                        return RedirectToAction("Staff", "StaffPage");
-                    }
-                    else if (Rol == "student")
-                    {
-                        return RedirectToAction("Student", "StudentPage");
-                    }
+                if (Rol == "staff")
+                {
+                    return RedirectToAction("Staff", "StaffPage");
+                }
+                else if (Rol == "student")
+                {
+                    return RedirectToAction("Student", "StudentPage");
+                }
+                else if (Rol == "Programs")
+                {
+                    return RedirectToAction("Programs", "Programs");
+                }
             }
             else if (re == 0)
             {
