@@ -80,8 +80,8 @@ namespace Repository
         {
             string Temp = Input1;
             int len = Input1.Length - 1;
-            string re = " ";
-            string Ans= " ";
+            string re = "";
+            string Ans= "";
             for (int i = len; i >= 0; i--)
             {
                 re += Input1[i];
