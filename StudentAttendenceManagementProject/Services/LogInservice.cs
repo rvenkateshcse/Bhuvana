@@ -30,5 +30,15 @@ namespace Services
             string re = Repository.LoginRepo.Student(Sn);
             return re;
         }
+        public static string StringReverse(string Input1)
+        {
+            string re = Repository.LoginRepo.StringReverse(Input1);
+            return re;
+        }
+        public static string StringPalindrome(string Input1)
+        {
+            string re = Repository.LoginRepo.StringPalindrome(Input1);
+            return re;
+        }
     }
 }

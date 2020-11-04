@@ -2,17 +2,30 @@
 @{
     ViewBag.Title = "Programs";
 }
+
 <form>
     <fieldset>
-        <legend>Choose Your Programs</legend>
+        <label>Input1:</label>
+        <input type="text" name="Input1" />
+        <br />
+        <label>Input2:</label>
+        <input type="text" name="Input2" />
+        <br />
+        <label>Answer</label>
+        <input type="text" value="@ViewBag.Ans" name="Answer" />
+        <br />
+
         <div>
-            <input type="checkbox" id="Programs" name="P1" value="String Reverse" onclick="onlyone(this)">
+
+            <input type="radio" id="Programs" name="P1" value="StringReverse">
             <label for="Programs">String Reverse</label>
         </div>
         <div>
-            <input type="checkbox" id="Programs" name="P2" value="String Palindrome">
+            <input type="radio"    id="Programs" name="P1" value="StringPalindrome">
             <label for="Programs">String Palindrome</label>
         </div>
+        <br />
+        <input type="submit" name="Process" value="Process" />
     </fieldset>
 </form>
  

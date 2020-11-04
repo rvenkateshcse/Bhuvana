@@ -66,6 +66,36 @@ namespace Repository
             con.Close();
             return Res;
         }
+        public static string StringReverse(string Input1)
+        {
+            int len = Input1.Length - 1;
+            string re = " ";
+           for(int i=len;i>=0;i--)
+            {
+                re += Input1[i];
+            }
+            return re;
+        }
+        public static string StringPalindrome(string Input1)
+        {
+            string Temp = Input1;
+            int len = Input1.Length - 1;
+            string re = " ";
+            string Ans= " ";
+            for (int i = len; i >= 0; i--)
+            {
+                re += Input1[i];
+            }
+            if (re==Input1)
+            {
+                Ans = "Your string is Palindrome";
+            }
+          else
+            { 
+                Ans = "Your string is not Palindrome";
+            }
+            return Ans;
+        }
     }
 }
 
