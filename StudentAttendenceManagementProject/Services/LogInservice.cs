@@ -45,5 +45,15 @@ namespace Services
             int re = Repository.LoginRepo.StringLength(Input1);
             return re;
         }
+        public static string IndividualcharactersInString(string Input1)
+        {
+            string re = Repository.LoginRepo.IndividualcharactersInString(Input1);
+            return re;
+        }
+        public static string IndividualcharactersOfStringInReverseOrder(string Input1)
+        {
+            string re = Repository.LoginRepo.IndividualcharactersOfStringInReverseOrder(Input1);
+            return re;
+        }
     }
 }

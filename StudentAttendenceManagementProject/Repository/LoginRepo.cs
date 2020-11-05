@@ -104,6 +104,31 @@ namespace Repository
             }
             return len;
         }
+        public static string IndividualcharactersInString(string Input1)
+        {
+            string res = "";
+            for(int i=0;i<Input1.Length;i++)
+            {
+                res += Input1[i] + " ";
+            }
+            return res;
+        }
+        public static string IndividualcharactersOfStringInReverseOrder(string Input1)
+        {
+            int len = Input1.Length - 1;
+            string re = " ";
+            string res = "";
+            for (int i = len; i >= 0; i--)
+            {
+                re += Input1[i];
+            }
+           
+            for (int i = 0; i < re.Length; i++)
+            {
+                res += re[i] + " ";
+            }
+            return res;
+        }
     }
 }
 
