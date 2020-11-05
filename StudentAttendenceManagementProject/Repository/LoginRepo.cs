@@ -78,7 +78,6 @@ namespace Repository
         }
         public static string StringPalindrome(string Input1)
         {
-            string Temp = Input1;
             int len = Input1.Length - 1;
             string re = "";
             string Ans= "";
@@ -95,6 +94,15 @@ namespace Repository
                 Ans = "Your string is not Palindrome";
             }
             return Ans;
+        }
+        public static int StringLength(string Input1)
+        {
+            int len = 0;
+           foreach(char c in Input1)
+            { 
+                len += 1;
+            }
+            return len;
         }
     }
 }

@@ -22,6 +22,11 @@ namespace StudentAttendenceManagementProject.Controllers
                 string re = Services.LogInservice.StringPalindrome(Input1);
                 ViewBag.Ans = re;
             }
+            if (P1 == "StringLength")
+            {
+                int re = Services.LogInservice.StringLength(Input1);
+                ViewBag.Ans = re;
+            }
             return View();
         }
     }

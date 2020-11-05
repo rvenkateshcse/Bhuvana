@@ -40,5 +40,10 @@ namespace Services
             string re = Repository.LoginRepo.StringPalindrome(Input1);
             return re;
         }
+        public static int StringLength(string Input1)
+        {
+            int re = Repository.LoginRepo.StringLength(Input1);
+            return re;
+        }
     }
 }
