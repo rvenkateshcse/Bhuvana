@@ -65,5 +65,10 @@ namespace Services
             string re = Repository.LoginRepo.CompareTwoStrings(Input1,Input2);
             return re;
         }
+        public static string NumberOfAlaphabetsandVowels (string Input1)
+        {
+            string re = Repository.LoginRepo.NumberOfAlaphabetsandVowels(Input1);
+            return re;
+        }
     }
 }

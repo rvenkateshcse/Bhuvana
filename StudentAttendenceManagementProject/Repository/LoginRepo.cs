@@ -163,6 +163,25 @@ namespace Repository
             }
             return res;
         }
+        public static string NumberOfAlaphabetsandVowels(string Input1)
+        {
+            int Alp = 0, Vow = 0;
+            string res = "";
+            for(int i=0;i<Input1.Length;i++)
+            {
+                if((Input1[i]>='a')&&(Input1[i]<='z')||(Input1[i] >= 'A') && (Input1[i] <= 'Z'))
+                {
+                    Alp += 1;
+                }
+                if ((Input1[i] == 'a') || (Input1[i] == 'e') || (Input1[i] == 'i') || (Input1[i] == 'o')||(Input1[i] == 'u') || (Input1[i] == 'A') || (Input1[i] == 'E') || (Input1[i] == 'I') || (Input1[i] == 'O') || (Input1[i] == 'U'))
+                {
+                    Vow += 1;
+                }
+            }
+            res="The No.of Alphabets and Vowels Present In a string is: " +Alp +Vow;
+            return res;
+
+        }
 
     }
 }

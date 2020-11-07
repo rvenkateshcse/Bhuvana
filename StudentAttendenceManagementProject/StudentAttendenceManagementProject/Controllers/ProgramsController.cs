@@ -47,6 +47,11 @@ namespace StudentAttendenceManagementProject.Controllers
                 string re = Services.LogInservice.CompareTwoStrings(Input1,Input2);
                 ViewBag.Ans = re;
             }
+            if (P1 == "NumberOfAlaphabetsandVowels")
+            {
+                string re = Services.LogInservice.NumberOfAlaphabetsandVowels(Input1);
+                ViewBag.Ans = re;
+            }
              return View();
         }
     }
