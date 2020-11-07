@@ -70,5 +70,10 @@ namespace Services
             string re = Repository.LoginRepo.NumberOfAlaphabetsandVowels(Input1);
             return re;
         }
+        public static string StringCopy(string Input1)
+        {
+            string re = Repository.LoginRepo.StringCopy(Input1);
+            return re;
+        }
     }
 }

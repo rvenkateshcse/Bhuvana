@@ -52,6 +52,11 @@ namespace StudentAttendenceManagementProject.Controllers
                 string re = Services.LogInservice.NumberOfAlaphabetsandVowels(Input1);
                 ViewBag.Ans = re;
             }
+            if (P1 =="StringCopy")
+            {
+                string re = Services.LogInservice.StringCopy(Input1);
+                ViewBag.Ans = re;
+            }
              return View();
         }
     }
