@@ -129,6 +129,19 @@ namespace Repository
             }
             return res;
         }
+        public static int NumberOfWordsInString(string Input1)
+        {
+            int word = 1;
+            for(int i=0;i<Input1.Length;i++)
+            {
+                if((Input1[i]==' ')||(Input1[i]=='\n'))
+                {
+                    word++;
+                }
+            }
+            return word;
+        }
+
     }
 }
 

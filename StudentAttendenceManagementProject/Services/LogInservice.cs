@@ -55,5 +55,10 @@ namespace Services
             string re = Repository.LoginRepo.IndividualcharactersOfStringInReverseOrder(Input1);
             return re;
         }
+        public static int NumberOfWordsInString(string Input1)
+        {
+           int re = Repository.LoginRepo.NumberOfWordsInString(Input1);
+            return re;
+        }
     }
 }

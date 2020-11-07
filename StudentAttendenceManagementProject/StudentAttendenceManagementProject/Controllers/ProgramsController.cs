@@ -37,6 +37,11 @@ namespace StudentAttendenceManagementProject.Controllers
                 string re = Services.LogInservice.IndividualcharactersOfStringInReverseOrder(Input1);
                 ViewBag.Ans = re;
             }
+            if (P1 =="NumberOfWordsInString")
+            {
+                int re = Services.LogInservice.NumberOfWordsInString(Input1);
+                ViewBag.Ans = re;
+            }
             return View();
         }
     }
