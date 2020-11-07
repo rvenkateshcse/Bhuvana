@@ -42,7 +42,12 @@ namespace StudentAttendenceManagementProject.Controllers
                 int re = Services.LogInservice.NumberOfWordsInString(Input1);
                 ViewBag.Ans = re;
             }
-            return View();
+            if (P1 == "CompareTwoStrings")
+            {
+                string re = Services.LogInservice.CompareTwoStrings(Input1,Input2);
+                ViewBag.Ans = re;
+            }
+             return View();
         }
     }
 }

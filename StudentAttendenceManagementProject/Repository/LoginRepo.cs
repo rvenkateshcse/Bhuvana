@@ -141,6 +141,28 @@ namespace Repository
             }
             return word;
         }
+        public static string CompareTwoStrings(string Input1,string Input2)
+        {
+            int len1=0, len2=0;
+            string res = "";
+           foreach(char c in Input1)
+            {
+                len1+= 1;
+            }
+            foreach (char c in Input2)
+            {
+                len2 += 1;
+            }
+            if(len1==len2)
+            {
+                res = "Two Input Strings are equal";
+            }
+            else
+            {
+                res = "Two Input Strings are not equal";
+            }
+            return res;
+        }
 
     }
 }

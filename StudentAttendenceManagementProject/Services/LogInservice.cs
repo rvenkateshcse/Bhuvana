@@ -60,5 +60,10 @@ namespace Services
            int re = Repository.LoginRepo.NumberOfWordsInString(Input1);
             return re;
         }
+        public static string CompareTwoStrings(string Input1,string Input2)
+        {
+            string re = Repository.LoginRepo.CompareTwoStrings(Input1,Input2);
+            return re;
+        }
     }
 }
