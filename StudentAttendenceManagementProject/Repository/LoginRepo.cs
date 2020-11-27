@@ -192,7 +192,77 @@ namespace Repository
             return res;
 
         }
+        public static int Factorial(int Input1)
+        {
+            int re = 1;
+           while(Input1>=1)
+            {
+                re = re * Input1;
+                Input1--;
+            }
+            return re;
 
+        }
+        public static int SumOfDigits(int Input1)
+        {
+            int rem, sum=0;
+            while(Input1>0)
+            {
+                rem = Input1 % 10;
+                sum = sum + rem;
+                Input1 /= 10;
+            }
+            return sum;
+        }
+        public static int ReverseNumber(int Input1)
+        {
+            int rev=0, rem;
+           while(Input1>0)
+            {
+                rem = Input1 % 10;
+                rev = rev * 10 + rem;
+                Input1 /= 10;
+            }
+            return rev;
+        }
+        public static string Palindrome(int Input1)
+        {
+            int temp = Input1;
+            int rev = 0, rem;
+            string res = " ";
+            while (Input1 > 0)
+            {
+                rem = Input1 % 10;
+                rev = rev * 10 + rem;
+                Input1 /= 10;
+            }
+            if (temp == rev)
+                res = "Input Number is Palindrome";
+            else
+                res = "Input Number is not  Palindrome";
+
+            return res;
+
+        }
+        public static string ArmstrongNumber(int Input1)
+        {
+            int temp = Input1;
+            int res = 0, rem;
+            string re = " ";
+            while (Input1 > 0)
+            {
+                rem = Input1 % 10;
+                res = rem * rem*rem + res;
+                Input1 /= 10;
+            }
+            if (temp == res)
+                re = "Input is Armstrong Num ";
+            else
+                re = "Input is not Armstrong Num";
+
+            return re;
+
+        }
 
     }
 }

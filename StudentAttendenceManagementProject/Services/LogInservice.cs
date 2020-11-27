@@ -75,5 +75,33 @@ namespace Services
             string re = Repository.LoginRepo.StringCopy(Input1);
             return re;
         }
+        public static int Factorial(int Input1)
+        {
+            int re = Repository.LoginRepo.Factorial(Input1);
+            return re;
+        }
+        public static int SumOfDigits(int Input1)
+        {
+            int re = Repository.LoginRepo.SumOfDigits(Input1);
+            return re;
+        }
+        public static int ReverseNumber(int Input1)
+        {
+            int re = Repository.LoginRepo.ReverseNumber(Input1);
+            return re;
+        }
+        public static string Palindrome(int Input1)
+        {
+            string re = Repository.LoginRepo.Palindrome(Input1);
+            return re;
+        }
+        public static string ArmstrongNumber(int Input1)
+        {
+            string re = Repository.LoginRepo.ArmstrongNumber(Input1);
+            return re;
+        }
+
+
+
     }
 }

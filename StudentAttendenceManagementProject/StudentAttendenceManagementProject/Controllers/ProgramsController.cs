@@ -57,7 +57,33 @@ namespace StudentAttendenceManagementProject.Controllers
                 string re = Services.LogInservice.StringCopy(Input1);
                 ViewBag.Ans = re;
             }
-             return View();
+            int IntInput1 = Convert.ToInt32(Input1);
+            if (P1 == "Factorial")
+            {
+                int re = Services.LogInservice.Factorial(IntInput1);
+                ViewBag.Ans = re;
+            }
+            if (P1 == "SumOfDigits")
+            {
+                int re = Services.LogInservice.SumOfDigits(IntInput1);
+                ViewBag.Ans = re;
+            }
+            if (P1 == "ReverseNumber")
+            {
+                int re = Services.LogInservice.ReverseNumber(IntInput1);
+                ViewBag.Ans = re;
+            }
+            if (P1 == "Palindrome")
+            {
+                string re = Services.LogInservice.Palindrome(IntInput1);
+                ViewBag.Ans = re;
+            }
+            if (P1 == "ArmstrongNumber")
+            {
+                string re = Services.LogInservice.ArmstrongNumber(IntInput1);
+                ViewBag.Ans = re;
+            }
+            return View();
         }
     }
 }
