@@ -1,0 +1,1 @@
+select * from (select *,rank() over(order by average desc)rank from studentviews) as a where a.id=5;

@@ -185,7 +185,7 @@ namespace Repository
         public static string StringCopy(string Input1)
         {
             string res = "";
-            for(int i=0;i<Input1.Length;i++)
+            for (int i = 0; i < Input1.Length; i++)
             {
                 res += Input1[i];
             }

@@ -1,0 +1,1 @@
+create view studentviews as select Id,Name,Age,(Mark1+Mark2+Mark3)/3 as average from student1 full outer join  Marks1 on student1.Id=Marks1.StudentId
