@@ -83,6 +83,16 @@ namespace StudentAttendenceManagementProject.Controllers
                 string re = Services.LogInservice.ArmstrongNumber(IntInput1);
                 ViewBag.Ans = re;
             }
+            int[] a = new int[10];
+            for(int i=0;i<10;i++)
+            {
+                a[i] =Convert.ToInt32(Input1[i]);
+            }
+            if (P1 == "SearchingElementInArray")
+            {
+                string re = Services.LogInservice.ArmstrongNumber();
+                ViewBag.Ans = re;
+            }
             return View();
         }
     }

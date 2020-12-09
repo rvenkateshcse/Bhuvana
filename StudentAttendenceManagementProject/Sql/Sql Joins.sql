@@ -34,3 +34,5 @@ left outer join EmployeeSalary on Employee.Name=EmployeeSalary.Name
 select Employee.Id,Employee.Name,Employee.Age,EmployeeSalary.salary from Employee 
 Right outer join EmployeeSalary on Employee.Name=EmployeeSalary.Name
 
+
+
