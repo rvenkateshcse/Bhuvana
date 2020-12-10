@@ -74,13 +74,20 @@
                 <input type="radio" id="Programs" name="P1" value="ArmstrongNumber">
                 <label for="Programs">Armstrong Number</label>
             </div>
-            <div>
-                <input type="radio" id="Programs" name="P1" value="SearchingElementInArray">
-                <label for="Programs">Searching Element In Array</label>
-            </div>
             <br />
             <input type="submit" name="Process" value="Process" />
 
+            <canvas id="Canvas" width="200" height="100"></canvas>
+
+           <script>
+               var c = document.getElementById("Canvas");
+               var ctx = c.getcontext("2d");
+               ctx.moveto(0, 0);
+               ctx.lineto(200, 100);
+               ctx.stroke();
+           </script>
+
         </fieldset>
+        
     </form>
  
