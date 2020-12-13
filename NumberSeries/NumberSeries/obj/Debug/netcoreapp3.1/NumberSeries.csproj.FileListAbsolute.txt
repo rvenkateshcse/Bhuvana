@@ -1,0 +1,11 @@
+C:\Users\rvenk\source\repos\Bhuvana\NumberSeries\NumberSeries\bin\Debug\netcoreapp3.1\NumberSeries.exe
+C:\Users\rvenk\source\repos\Bhuvana\NumberSeries\NumberSeries\bin\Debug\netcoreapp3.1\NumberSeries.deps.json
+C:\Users\rvenk\source\repos\Bhuvana\NumberSeries\NumberSeries\bin\Debug\netcoreapp3.1\NumberSeries.runtimeconfig.json
+C:\Users\rvenk\source\repos\Bhuvana\NumberSeries\NumberSeries\bin\Debug\netcoreapp3.1\NumberSeries.runtimeconfig.dev.json
+C:\Users\rvenk\source\repos\Bhuvana\NumberSeries\NumberSeries\bin\Debug\netcoreapp3.1\NumberSeries.dll
+C:\Users\rvenk\source\repos\Bhuvana\NumberSeries\NumberSeries\bin\Debug\netcoreapp3.1\NumberSeries.pdb
+C:\Users\rvenk\source\repos\Bhuvana\NumberSeries\NumberSeries\obj\Debug\netcoreapp3.1\NumberSeries.csprojAssemblyReference.cache
+C:\Users\rvenk\source\repos\Bhuvana\NumberSeries\NumberSeries\obj\Debug\netcoreapp3.1\NumberSeries.AssemblyInfoInputs.cache
+C:\Users\rvenk\source\repos\Bhuvana\NumberSeries\NumberSeries\obj\Debug\netcoreapp3.1\NumberSeries.AssemblyInfo.cs
+C:\Users\rvenk\source\repos\Bhuvana\NumberSeries\NumberSeries\obj\Debug\netcoreapp3.1\NumberSeries.dll
+C:\Users\rvenk\source\repos\Bhuvana\NumberSeries\NumberSeries\obj\Debug\netcoreapp3.1\NumberSeries.pdb
