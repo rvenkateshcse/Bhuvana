@@ -35,4 +35,3 @@ select Employee.Id,Employee.Name,Employee.Age,EmployeeSalary.salary from Employe
 Right outer join EmployeeSalary on Employee.Name=EmployeeSalary.Name
 
 
-
