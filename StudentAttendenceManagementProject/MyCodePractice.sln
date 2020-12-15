@@ -18,6 +18,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example of PartialClass", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumberSeries", "..\NumberSeries\NumberSeries\NumberSeries.csproj", "{22DC88BB-130E-46AC-A9C8-C7B4362DDD01}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Display CurrentDate using Web Api", "Display CurrentDate using Web Api\Display CurrentDate using Web Api.csproj", "{BC50639B-7630-4450-9925-B565DA8B2E32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,10 @@ Global
 		{22DC88BB-130E-46AC-A9C8-C7B4362DDD01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22DC88BB-130E-46AC-A9C8-C7B4362DDD01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22DC88BB-130E-46AC-A9C8-C7B4362DDD01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC50639B-7630-4450-9925-B565DA8B2E32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC50639B-7630-4450-9925-B565DA8B2E32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC50639B-7630-4450-9925-B565DA8B2E32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC50639B-7630-4450-9925-B565DA8B2E32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
