@@ -2,46 +2,7 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/MyPractices
-/Databaseoperations/bin/Debug/netstandard2.0
-/Databaseoperations/obj
-/Math/bin/Debug/netstandard2.0
-/Math/obj
-/MyPractices/bin/Debug
-/MyPractices/obj/Debug
-/Process/bin/Debug/netstandard2.0
-/Process/obj
-/Numbers/obj
-/Numbers/bin/Debug/netstandard2.0
-/LoginForms/bin/Debug/netstandard2.0
-/LoginForms/obj
-/StudentLogin/bin
-/StudentLogin/obj/Debug
-/UserLoginProcess/bin
-/UserLoginProcess/obj/Debug
-/DataService/obj
-/Repository/obj
-/Student Attendance Management System/bin
-/Student Attendance Management System/obj/Debug
-/packages/EntityFramework.6.2.0
-/StudentAttendenceManagementProject/packages
-/StudentAttendenceManagementProject/Repository/obj
-/StudentAttendenceManagementProject/Repository/bin/Debug/netstandard2.0
-/StudentAttendenceManagementProject/Services/bin/Debug/netstandard2.0
-/StudentAttendenceManagementProject/Services/obj
-/StudentAttendenceManagementProject/StudentAttendenceManagementProject/bin
-/StudentAttendenceManagementProject/StudentAttendenceManagementProject/obj/Debug
-/StudentAttendenceManagementProject/.vs/StudentAttendenceManagementProject
-/DatabaseOperation/obj/Release
-/LoginForm/obj/Release/netcoreapp3.1
-/.vs/slnx.sqlite
-/PalindromeNumber/obj/Release/netstandard2.0
-/StringFunctions/obj/Release/netstandard2.0
-/StudentAttendenceManagementProject/StudentsAttendenceManagementProj/bin
-/StudentAttendenceManagementProject/StudentsAttendenceManagementProj/obj/Debug
-/StudentAttendenceManagementProject/.vs
-/StudentAttendenceManagementProject/Example of Conditional operator/obj
-/StudentAttendenceManagementProject/Example of PartialClass/obj
-/StudentAttendenceManagementProject/Example of PartialClass/bin/Debug/netstandard2.0
-/StudentAttendenceManagementProject/Display CurrentDate using Web Api/bin
-/StudentAttendenceManagementProject/Display CurrentDate using Web Api/obj/Debug
+.vs
+bin
+obj
+packages
