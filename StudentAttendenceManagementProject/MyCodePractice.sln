@@ -102,13 +102,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Check The Matrix is Identit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "String Reverse Using Substring", "String Reverse Using Substring\String Reverse Using Substring.csproj", "{546FB699-CEB6-45A7-BDF9-1DF659CAB64B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reverse String Using Iteration", "Reverse String Using Iteration\Reverse String Using Iteration.csproj", "{BDC67AB7-57E4-41CD-8BE3-308D473FF33D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reverse String Using Iteration", "Reverse String Using Iteration\Reverse String Using Iteration.csproj", "{BDC67AB7-57E4-41CD-8BE3-308D473FF33D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lcm of Two Numbers", "Lcm of Two Numbers\Lcm of Two Numbers.csproj", "{181E5013-140A-4B56-892E-1E1929E8AAA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lcm of Two Numbers", "Lcm of Two Numbers\Lcm of Two Numbers.csproj", "{181E5013-140A-4B56-892E-1E1929E8AAA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gcd Of Two Numbers", "Gcd Of Two Numbers\Gcd Of Two Numbers.csproj", "{A8950EEC-1FA5-44A0-94C2-6DAA5292ACF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gcd Of Two Numbers", "Gcd Of Two Numbers\Gcd Of Two Numbers.csproj", "{A8950EEC-1FA5-44A0-94C2-6DAA5292ACF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "String Permutation", "String Permutation\String Permutation.csproj", "{252183D2-CB20-4144-8FB2-2163CE00B9ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "String Permutation", "String Permutation\String Permutation.csproj", "{252183D2-CB20-4144-8FB2-2163CE00B9ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Power of four", "Power of four\Power of four.csproj", "{589A806E-1183-4403-ADEF-2D2AC6DD7DB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Convert String To Lowercase", "Convert String To Lowercase\Convert String To Lowercase.csproj", "{E065CC05-F286-463A-9729-E0C9EC482F18}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -320,6 +324,14 @@ Global
 		{252183D2-CB20-4144-8FB2-2163CE00B9ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{252183D2-CB20-4144-8FB2-2163CE00B9ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{252183D2-CB20-4144-8FB2-2163CE00B9ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{589A806E-1183-4403-ADEF-2D2AC6DD7DB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{589A806E-1183-4403-ADEF-2D2AC6DD7DB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{589A806E-1183-4403-ADEF-2D2AC6DD7DB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{589A806E-1183-4403-ADEF-2D2AC6DD7DB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E065CC05-F286-463A-9729-E0C9EC482F18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E065CC05-F286-463A-9729-E0C9EC482F18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E065CC05-F286-463A-9729-E0C9EC482F18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E065CC05-F286-463A-9729-E0C9EC482F18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
