@@ -110,9 +110,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gcd Of Two Numbers", "Gcd O
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "String Permutation", "String Permutation\String Permutation.csproj", "{252183D2-CB20-4144-8FB2-2163CE00B9ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Power of four", "Power of four\Power of four.csproj", "{589A806E-1183-4403-ADEF-2D2AC6DD7DB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Power of four", "Power of four\Power of four.csproj", "{589A806E-1183-4403-ADEF-2D2AC6DD7DB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Convert String To Lowercase", "Convert String To Lowercase\Convert String To Lowercase.csproj", "{E065CC05-F286-463A-9729-E0C9EC482F18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Convert String To Lowercase", "Convert String To Lowercase\Convert String To Lowercase.csproj", "{E065CC05-F286-463A-9729-E0C9EC482F18}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Check Substring In String", "Check Substring In String\Check Substring In String.csproj", "{F05117B0-A84C-4F35-B294-24F7D0D13795}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Check The Number is Happy Number Or Not", "Check The Number is Happy Number Or Not\Check The Number is Happy Number Or Not.csproj", "{3274A4D6-9F90-4686-8C17-A30376C354FD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HexaDecimal To Decimal Conversion", "HexaDecimal To Decimal Conversion\HexaDecimal To Decimal Conversion.csproj", "{DBA64D8D-26F6-4574-B322-4D8A07F980A5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Happy Number", "Happy Number\Happy Number.csproj", "{8674603E-A09B-4259-A7FA-511994105BA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchElementInArray", "SearchElementInArray\SearchElementInArray.csproj", "{82D584E0-D743-4E24-9091-D7ECD63DC202}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stringSplit", "stringSplit\stringSplit.csproj", "{24C253C2-5F29-439A-91FF-AD916C28E6D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -332,6 +344,30 @@ Global
 		{E065CC05-F286-463A-9729-E0C9EC482F18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E065CC05-F286-463A-9729-E0C9EC482F18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E065CC05-F286-463A-9729-E0C9EC482F18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F05117B0-A84C-4F35-B294-24F7D0D13795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F05117B0-A84C-4F35-B294-24F7D0D13795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F05117B0-A84C-4F35-B294-24F7D0D13795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F05117B0-A84C-4F35-B294-24F7D0D13795}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3274A4D6-9F90-4686-8C17-A30376C354FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3274A4D6-9F90-4686-8C17-A30376C354FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3274A4D6-9F90-4686-8C17-A30376C354FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3274A4D6-9F90-4686-8C17-A30376C354FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBA64D8D-26F6-4574-B322-4D8A07F980A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBA64D8D-26F6-4574-B322-4D8A07F980A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBA64D8D-26F6-4574-B322-4D8A07F980A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBA64D8D-26F6-4574-B322-4D8A07F980A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8674603E-A09B-4259-A7FA-511994105BA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8674603E-A09B-4259-A7FA-511994105BA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8674603E-A09B-4259-A7FA-511994105BA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8674603E-A09B-4259-A7FA-511994105BA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82D584E0-D743-4E24-9091-D7ECD63DC202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82D584E0-D743-4E24-9091-D7ECD63DC202}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82D584E0-D743-4E24-9091-D7ECD63DC202}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82D584E0-D743-4E24-9091-D7ECD63DC202}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24C253C2-5F29-439A-91FF-AD916C28E6D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24C253C2-5F29-439A-91FF-AD916C28E6D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24C253C2-5F29-439A-91FF-AD916C28E6D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24C253C2-5F29-439A-91FF-AD916C28E6D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

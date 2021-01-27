@@ -134,6 +134,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProgramsController.cs" />
     <Compile Include="Controllers\RegistrationController.cs" />
+    <Compile Include="Controllers\SendEmailController.cs" />
     <Compile Include="Controllers\StaffPageController.cs" />
     <Compile Include="Controllers\StudentPageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -193,6 +194,7 @@
     <Content Include="Views\StaffPage\Staff.cshtml" />
     <Content Include="Views\StudentPage\Student.cshtml" />
     <Content Include="Views\Programs\Programs.cshtml" />
+    <Content Include="Views\SendEmail\SendEmailView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
